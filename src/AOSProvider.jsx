@@ -1,0 +1,17 @@
+import { useEffect } from 'react';
+import AOS from 'aos';
+
+function AOSProvider({ children }) {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      easing: 'ease-out-cubic',
+      once: true,
+      offset: 80,
+    });
+  }, []);
+
+  return children;
+}
+
+export default AOSProvider;

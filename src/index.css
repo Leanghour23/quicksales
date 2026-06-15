@@ -1,0 +1,10 @@
+body{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+body.font-battambang{
+  font-family: 'Noto Sans Khmer', 'Battambang', system-ui, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.7;
+}

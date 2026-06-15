@@ -1,0 +1,553 @@
+import logo from '../assets/logo.png';
+import working from '../assets/working.jpg';
+import meeting from '../assets/bussiness-meeting.jpg';
+import client1 from '../assets/client-logos/ppl.jpg';
+import client2 from '../assets/client-logos/suc.jpg';
+import client3 from '../assets/client-logos/pat.jpg';
+import client4 from '../assets/client-logos/stt.png';
+import contactImage from '../assets/img_contact.png';
+import supportImage from '../assets/img_support.png';
+import facebook from '../assets/facebook.png';
+import telegram from '../assets/telegram.png';
+
+const siteContent = {
+  nav: {
+    logo: {
+      img: logo,
+      text: 'Logo',
+    },
+    telegramLink: 'https://t.me/ouchamroeun',
+    menus: [
+      {
+        link: '#Home-content',
+        label: {
+          en: 'Home',
+          kh: 'ទំព័រដើម',
+        },
+      },
+      {
+        dropdown: true,
+        label: {
+          en: 'Service',
+          kh: 'សេវាកម្ម',
+        },
+        submenu: [
+          {
+            link: '#service-cmd',
+            label: {
+              en: 'COMTOMER RELATIONSHIP MANAGEMENT',
+              kh: 'COMTOMER RELATIONSHIP MANAGEMENT',
+            },
+          },
+          {
+            link: '#service-acc',
+            label: {
+              en: 'ACCOUNTING',
+              kh: 'ACCOUNTING',
+            },
+          },
+        ],
+      },
+      {
+        link: '#Pricing-content',
+        label: {
+          en: 'Pricing',
+          kh: 'តម្លៃ',
+        },
+      },
+      {
+        link: '#About-content',
+        label: {
+          en: 'About',
+          kh: 'អំពីពួកយើង',
+        },
+      },
+      {
+        link: 'https://t.me/ouchamroeun',
+        label: {
+          en: 'Contact Us',
+          kh: 'ទំនាក់ទំនងពួកយើង',
+        },
+        external: true,
+      },
+    ],
+  },
+  hero: {
+    title: {
+      en: 'QuickSales',
+      kh: 'QuickSales',
+    },
+    subtitle: {
+      en: 'CRM Service',
+      kh: 'CRM Service',
+    },
+    description: {
+      en: "Exceptional support: our dedicated support team is here to help you every step of the way. From onboarding to troubleshooting, we're committed to ensuring your CRM experience is smooth and effective.",
+      kh: 'ការគាំទ្រដ៏ល្អឥតខ្ចោះ៖ ក្រុមគាំទ្រដែលយើងខិតខំរបស់យើងនៅទីនេះដើម្បីជួយអ្នកគ្រប់ជំហាន។ ចាប់ពីការចាប់ផ្តើមប្រើប្រាស់រហូតដល់ការដោះស្រាយបញ្ហា យើងប្តេជ្ញាធានាថាបទពិសោធន៍ CRM របស់អ្នករលូន និងមានប្រសិទ្ធភាព។',
+    },
+    cta: {
+      en: 'Get Started',
+      kh: 'ចាប់ផ្តើម',
+    },
+    clients: {
+      title: {
+        en: 'Clients',
+        kh: 'អតិថិជនរបស់យើង',
+      },
+      description: {
+        en: 'MANY BRANDS HAVE TRUSTED ON US',
+        kh: 'អតិថិជនជាច្រើនបានជឿទុកចិត្តលើយើង',
+      },
+      logos: [
+        { img: client1, text: 'PPL' },
+        { img: client2, text: 'StartUP Community' },
+        { img: client3, text: 'PATech' },
+        { img: client4, text: 'SOTOTIAK TRADING CO., LTD' },
+      ],
+    },
+  },
+  about: {
+    title: {
+      en: 'About Us',
+      kh: 'អំពីពួកយើង',
+    },
+    description: {
+      en: 'We provide service that you can rely on is simply dummy text of the printing and typesetting industry. Choose a CRM that offers high-quality customer service, resources, and tutorials.',
+      kh: 'យើងផ្តល់សេវាកម្មដែលអ្នកអាចពឹងផ្អែកបាន គឺគ្រាន់តែជាអត្ថបទមិនច្បាស់នៃឧស្សាហកម្មបោះពុម្ព និងវាយអក្សរ។ ជ្រើសរើស CRM ដែលផ្តល់នូវសេវាកម្មអតិថិជនគុណភាពខ្ពស់ ធនធាន និងការបង្រៀន។',
+    },
+    banner: {
+      img: meeting,
+      text: 'Meetings',
+    },
+    points: [
+      {
+        title: {
+          en: 'Our story',
+          kh: 'រឿងរបស់យើង',
+        },
+        detail: {
+          en: 'We are small team, who have motivated to build the best CRM in southeast asia.',
+          kh: 'យើងជាក្រុមតូច ដែលបានជំរុញឱ្យបង្កើត CRM ល្អបំផុតនៅអាស៊ាន',
+        },
+      },
+      {
+        title: {
+          en: 'What is Quick Sales',
+          kh: 'អ្វីទៅជាការលក់រហ័ស',
+        },
+        detail: {
+          en: 'Quick sales is the best CRM system in the southeast asia.',
+          kh: 'ការលក់រហ័សគឺជាប្រព័ន្ធ CRM ដ៏ល្អបំផុតនៅអាស៊ាន',
+        },
+      },
+      {
+        title: {
+          en: 'Quick Sales Careers',
+          kh: 'អាជីពក្នុង Quick Sales',
+        },
+        detail: {
+          en: 'You can become a partner in Digital.',
+          kh: 'អ្នកអាចក្លាយជាដៃគូរនៅក្នុងឌីជីថល',
+        },
+      },
+    ],
+  },
+  service: {
+    title: {
+      en: 'Our Services',
+      kh: 'សេវាកម្មរបស់យើង',
+    },
+    description: {
+      en: 'Discover the range of services we offer to help you maximize the potential of our CRM system.',
+      kh: 'ស្វែងរកជួរសេវាកម្មដែលយើងផ្តល់ដើម្បីជួយអ្នកបង្កើនសក្តានុពលនៃប្រព័ន្ធ CRM របស់យើង។',
+    },
+    subtitle: {
+      en: 'COMTOMER RELATIONSHIP MANAGEMENT',
+      kh: 'COMTOMER RELATIONSHIP MANAGEMENT',
+    },
+    cards: [
+      {
+        title: {
+          en: 'Contact and Lead Management',
+          kh: 'ការគ្រប់គ្រងទំនាក់ទំនង និងអតិថិជនសក្តានុពល',
+        },
+        description: {
+          en: 'CRM stores and organizes customer and prospect data, including contact information, interaction history, and preferences.',
+          kh: 'CRM ផ្ទុក និងរៀបចំទិន្នន័យអតិថិជន និងអតិថិជនសក្តានុពល រួមទាំងព័ត៌មានទំនាក់ទំនង ប្រវត្តិអន្តរកម្ម និងចំណូលចិត្ត។',
+        },
+        icon: contactImage,
+      },
+      {
+        title: {
+          en: 'Sales Management and Automation',
+          kh: 'ការគ្រប់គ្រងការលក់ និងស្វ័យប្រវត្តិកម្ម',
+        },
+        description: {
+          en: 'CRMs help sales teams with pipeline tracking, deal management.',
+          kh: 'CRM ជួយក្រុមលក់ជាមួយនឹងការតាមដានបំពង់លក់ និងការគ្រប់គ្រងកិច្ចព្រមព្រៀង។',
+        },
+        icon: working,
+      },
+      {
+        title: {
+          en: 'Customer Support and Case Management',
+          kh: 'ជំនួយអតិថិជន និងការគ្រប់គ្រងករណី',
+        },
+        description: {
+          en: 'CRMs provide customer service teams with tools to manage and resolve issues.',
+          kh: 'CRM ផ្តល់ឱ្យក្រុមសេវាកម្មអតិថិជននូវឧបករណ៍ដើម្បីគ្រប់គ្រង និងដោះស្រាយបញ្ហា។',
+        },
+        icon: supportImage,
+      },
+    ],
+    accTitle: {
+      en: 'ACCOUNTING',
+      kh: 'ACCOUNTING',
+    },
+    accCards: [
+      {
+        title: {
+          en: 'Invoices and Billing',
+          kh: 'Invoices and Billing',
+        },
+        description: {
+          en: 'Track invoices, issue billing documents, and keep payment records organized in one place.',
+          kh: 'តាមដានវិក្កយបត្រ ចេញឯកសារវិក្កយបត្រ និងរក្សាទុកកំណត់ត្រាបង់ប្រាក់ឲ្យមានរបៀបរៀបរយនៅកន្លែងតែមួយ។',
+        },
+        icon: contactImage,
+      },
+      {
+        title: {
+          en: 'Payment Tracking',
+          kh: 'Payment Tracking',
+        },
+        description: {
+          en: 'Monitor due dates, partial payments, and customer balances with clear financial visibility.',
+          kh: 'តាមដានកាលបរិច្ឆេទដែលត្រូវបង់ ការបង់ប្រាក់មួយផ្នែក និងសមតុល្យអតិថិជនជាមួយនឹងទិដ្ឋភាពហិរញ្ញវត្ថុច្បាស់លាស់។',
+        },
+        icon: supportImage,
+      },
+      {
+        title: {
+          en: 'Reports and Reconciliation',
+          kh: 'Reports and Reconciliation',
+        },
+        description: {
+          en: 'Generate financial reports and reconcile account activity faster with fewer manual steps.',
+          kh: 'បង្កើតរបាយការណ៍ហិរញ្ញវត្ថុ និងផ្ទៀងផ្ទាត់សកម្មភាពគណនីបានលឿនជាងមុន ដោយចំនួនជំហានធ្វើដោយដៃតិចជាងមុន។',
+        },
+        icon: working,
+      },
+    ],
+  },
+  pricing: {
+    title: {
+      en: 'Pricing',
+      kh: 'តម្លៃ',
+    },
+    subtitle: {
+      en: 'We understand that every business is unique, and so are your CRM needs.',
+      kh: 'យើងយល់ថាអាជីវកម្មនីមួយៗមានលក្ខណៈប្លែកពីគេ ហើយតម្រូវការ CRM របស់អ្នកក៏ដូចគ្នាដែរ។',
+    },
+    description: {
+      en: 'We offer tailored solutions to help you manage customer relationships effectively and drive growth.',
+      kh: 'យើងផ្តល់ជូននូវដំណោះស្រាយសមស្របដើម្បីជួយអ្នកក្នុងការគ្រប់គ្រងទំនាក់ទំនងអតិថិជនប្រកបដោយប្រសិទ្ធភាព និងជំរុញកំណើន។',
+    },
+    actions: [
+      {
+        en: 'COMTOMER RELATIONSHIP MANAGEMENT',
+        kh: 'COMTOMER RELATIONSHIP MANAGEMENT',
+        href: '#Pricing-content',
+        target: 'crm',
+      },
+      {
+        en: 'ACCOUNTING',
+        kh: 'ACCOUNTING',
+        href: '#Pricing-content',
+        target: 'acc',
+      },
+    ],
+    monthlyLabel: {
+      en: 'Monthly',
+      kh: 'ប្រចាំខែ',
+    },
+    yearlyLabel: {
+      en: 'Yearly (5% OFF)',
+      kh: 'ប្រចាំឆ្នាំ (5% OFF)',
+    },
+    plans: [
+      {
+        variant: 'light',
+        group: 'crm',
+        title: {
+          en: 'Essentials',
+          kh: 'Essentials',
+        },
+        price: 15,
+        description: {
+          en: 'Startups and small business just beginning to explore CRM solution.',
+          kh: 'ការចាប់ផ្តើមអាជីវកម្ម និងអាជីវកម្មខ្នាតតូចទើបតែចាប់ផ្តើមស្វែងរកដំណោះស្រាយ CRM ។',
+        },
+        features: [
+          {
+            en: 'Basic CRM System Access',
+            kh: 'ការចូលប្រើប្រព័ន្ធ CRM មូលដ្ឋាន',
+          },
+          {
+            en: 'Lead Management',
+            kh: 'ការគ្រប់គ្រងព័ត៌មានដំបូងអតិថិជន',
+          },
+          {
+            en: 'Task Management',
+            kh: 'ការគ្រប់គ្រងភារកិច្ចទំនាក់ទំនងអតិថិជន',
+          },
+          {
+            en: 'Contact Management',
+            kh: 'ការគ្រប់គ្រងព័ត៌មានអតិថិជន',
+          },
+          {
+            en: 'Email Automation',
+            kh: 'ស្វ័យប្រវត្តិកម្មអ៊ីមែល',
+          },
+        ],
+      },
+      {
+        variant: 'dark',
+        group: 'crm',
+        title: {
+          en: 'Advanced',
+          kh: 'Advanced',
+        },
+        featureHeading: {
+          en: 'Features',
+          kh: 'Features',
+        },
+        price: 25,
+        description: {
+          en: 'Larger enterprises needing a comprehensive CRM system with extensive support and customization options.',
+          kh: 'សហគ្រាសធំៗត្រូវការប្រព័ន្ធ CRM ដ៏ទូលំទូលាយជាមួយនឹងការគាំទ្រយ៉ាងទូលំទូលាយ និងជម្រើសប្ដូរតាមបំណង។',
+        },
+        features: [
+          {
+            en: 'Full CRM System Access',
+            kh: 'ការចូលប្រើប្រព័ន្ធ CRM ពេញលេញ',
+          },
+          {
+            en: 'Advanced Analytics and Reporting',
+            kh: 'ការវិភាគកម្រិតខ្ពស់ និងការរាយការណ៍',
+          },
+          {
+            en: 'Customer Segmentation',
+            kh: 'ការបែងចែកអតិថិជន',
+          },
+          {
+            en: 'Priority Support',
+            kh: 'ការគាំទ្រអាទិភាព',
+          },
+          {
+            en: 'Dedicated Account Manager',
+            kh: 'អ្នកគ្រប់គ្រងគណនីពិសេស',
+          },
+        ],
+      },
+      {
+        variant: 'light',
+        group: 'acc',
+        anchor: 'pricing-cdm',
+        title: {
+          en: 'CDM',
+          kh: 'CDM',
+        },
+        price: 35,
+        description: {
+          en: 'Keep your contact, lead, and deal information organized in one simple workspace.',
+          kh: 'រក្សាព័ត៌មានទំនាក់ទំនង ព័ត៌មានអតិថិជនសក្តានុពល និងកិច្ចព្រមព្រៀងឱ្យមានរបៀបរៀបរយនៅក្នុងកន្លែងធ្វើការតែមួយ។',
+        },
+        features: [
+          {
+            en: 'Contact Management',
+            kh: 'ការគ្រប់គ្រងទំនាក់ទំនង',
+          },
+          {
+            en: 'Lead Tracking',
+            kh: 'ការតាមដានអតិថិជនសក្តានុពល',
+          },
+          {
+            en: 'Task Follow-up',
+            kh: 'ការតាមដានភារកិច្ច',
+          },
+          {
+            en: 'Deal Monitoring',
+            kh: 'ការតាមដានកិច្ចព្រមព្រៀង',
+          },
+          {
+            en: 'Quick Reporting',
+            kh: 'របាយការណ៍រហ័ស',
+          },
+        ],
+      },
+      {
+        variant: 'dark',
+        group: 'acc',
+        anchor: 'pricing-acc',
+        title: {
+          en: 'ACC',
+          kh: 'ACC',
+        },
+        featureHeading: {
+          en: 'Features',
+          kh: 'Features',
+        },
+        price: 40,
+        description: {
+          en: 'Handle invoices, payment tracking, and account records with less manual work.',
+          kh: 'គ្រប់គ្រងវិក្កយបត្រ ការតាមដានការទូទាត់ និងកំណត់ត្រាគណនីដោយមានការងារដោយដៃតិចជាងមុន។',
+        },
+        features: [
+          {
+            en: 'Invoice Management',
+            kh: 'ការគ្រប់គ្រងវិក្កយបត្រ',
+          },
+          {
+            en: 'Payment Tracking',
+            kh: 'ការតាមដានការទូទាត់',
+          },
+          {
+            en: 'Balance Overview',
+            kh: 'ទិដ្ឋភាពសមតុល្យ',
+          },
+          {
+            en: 'Billing History',
+            kh: 'ប្រវត្តិវិក័យប័ត្រ',
+          },
+          {
+            en: 'Account Reports',
+            kh: 'របាយការណ៍គណនី',
+          },
+        ],
+      },
+    ],
+  },
+  faq: {
+    title: {
+      en: 'FAQ',
+      kh: 'FAQ',
+    },
+    heading: {
+      en: 'Frequently Asked Questions',
+      kh: 'សំណួរដែលគេសួរញឹកញាប់',
+    },
+    description1: {
+      en: 'Improved conversion rates, included beautiful designs - just a few things our clients love!',
+      kh: 'អត្រាបំប្លែងដែលប្រសើរឡើង រួមបញ្ចូលការរចនាដ៏ស្រស់ស្អាត - គ្រាន់តែជារបស់មួយចំនួនដែលអតិថិជនរបស់យើងចូលចិត្ត!',
+    },
+    accordion: [
+      {
+        title: {
+          en: 'Why choose Quick Sales',
+          kh: 'ហេតុអ្វីត្រូវជ្រើសរើស Quick Sales',
+        },
+        detail: {
+          en: 'Choosing Quick Sales as your CRM (Customer Relationship Management) system offers several advantages that can help improve sales processes, customer engagement, and overall business efficiency.',
+          kh: 'ការជ្រើសរើសការលក់រហ័សជាប្រព័ន្ធ CRM (ការគ្រប់គ្រងទំនាក់ទំនងអតិថិជន) របស់អ្នកផ្តល់នូវអត្ថប្រយោជន៍ជាច្រើនដែលអាចជួយកែលម្អដំណើរការលក់ ការចូលរួមរបស់អតិថិជន និងប្រសិទ្ធភាពអាជីវកម្មទាំងមូល។',
+        },
+      },
+      {
+        title: {
+          en: 'What is CRM and how can it benefit my business?',
+          kh: 'តើ CRM គឺជាអ្វី ហើយតើវាអាចផ្តល់អត្ថប្រយោជន៍ដល់អាជីវកម្មរបស់ខ្ញុំយ៉ាងដូចម្តេច?',
+        },
+        detail: {
+          en: 'Customer Relationship Management (CRM) is a technology or strategy that businesses use to manage interactions with current and potential customers. CRM systems help organize, track, and nurture customer relationships, providing a 360-degree view of all customer touchpoints, including communications, purchases, support history, and marketing interactions.',
+          kh: 'ការគ្រប់គ្រងទំនាក់ទំនងអតិថិជន (CRM) គឺជាបច្ចេកវិទ្យា ឬយុទ្ធសាស្ត្រដែលអាជីវកម្មប្រើប្រាស់ដើម្បីគ្រប់គ្រងអន្តរកម្មជាមួយអតិថិជនបច្ចុប្បន្ន និងសក្តានុពល។ ប្រព័ន្ធ CRM ជួយរៀបចំ តាមដាន និងចិញ្ចឹមទំនាក់ទំនងអតិថិជន ដោយផ្តល់នូវទិដ្ឋភាព 360 ដឺក្រេនៃចំណុចទំនាក់ទំនងអតិថិជនទាំងអស់ រួមទាំងទំនាក់ទំនង ការទិញ ប្រវត្តិគាំទ្រ និងអន្តរកម្មទីផ្សារ។',
+        },
+      },
+      {
+        title: {
+          en: 'How do I know if CRM is right for my business?',
+          kh: 'តើខ្ញុំដឹងដោយរបៀបណាថា CRM ត្រឹមត្រូវសម្រាប់អាជីវកម្មរបស់ខ្ញុំ?',
+        },
+        detail: {
+          en: "Deciding whether a Customer Relationship Management (CRM) system is right for your business depends on your specific needs, goals, and the challenges you're facing. Here are key factors to consider.",
+          kh: 'ការសម្រេចចិត្តថាតើប្រព័ន្ធគ្រប់គ្រងទំនាក់ទំនងអតិថិជន (CRM) ត្រឹមត្រូវសម្រាប់អាជីវកម្មរបស់អ្នក អាស្រ័យលើតម្រូវការជាក់លាក់ គោលដៅ និងបញ្ហាប្រឈមដែលអ្នកកំពុងជួបប្រទះ។ នេះគឺជាកត្តាសំខាន់ៗដែលត្រូវពិចារណា។',
+        },
+      },
+      {
+        title: {
+          en: 'What features should I look for in a CRM system?',
+          kh: 'តើខ្ញុំគួររកមើលលក្ខណៈពិសេសអ្វីខ្លះនៅក្នុងប្រព័ន្ធ CRM?',
+        },
+        detail: {
+          en: 'When choosing a CRM system, the right features can help streamline your business operations, improve customer relationships, and drive growth. Here are essential features to consider.',
+          kh: 'នៅពេលជ្រើសរើសប្រព័ន្ធ CRM មុខងារត្រឹមត្រូវអាចជួយសម្រួលប្រតិបត្តិការអាជីវកម្មរបស់អ្នក ធ្វើឱ្យទំនាក់ទំនងអតិថិជនប្រសើរឡើង និងជំរុញកំណើន។ នេះគឺជាលក្ខណៈសំខាន់ៗដែលត្រូវពិចារណា។',
+        },
+      },
+      {
+        title: {
+          en: 'How do I know if CRM is right for my business?',
+          kh: 'តើខ្ញុំដឹងដោយរបៀបណាថា CRM ត្រឹមត្រូវសម្រាប់អាជីវកម្មរបស់ខ្ញុំ?',
+        },
+        detail: {
+          en: "Deciding whether a CRM (Customer Relationship Management) system is right for your business depends on your specific needs, the challenges you're facing, and your business goals. Here are some key signs that a CRM might benefit your organization.",
+          kh: 'ការសម្រេចចិត្តថាតើប្រព័ន្ធ CRM (ការគ្រប់គ្រងទំនាក់ទំនងអតិថិជន) ត្រឹមត្រូវសម្រាប់អាជីវកម្មរបស់អ្នក អាស្រ័យលើតម្រូវការជាក់លាក់របស់អ្នក បញ្ហាប្រឈមដែលអ្នកកំពុងប្រឈមមុខ និងគោលដៅអាជីវកម្មរបស់អ្នក។ នេះគឺជាសញ្ញាសំខាន់ៗមួយចំនួនដែល CRM អាចផ្តល់អត្ថប្រយោជន៍ដល់ស្ថាប័នរបស់អ្នក។',
+        },
+      },
+    ],
+  },
+  footer: {
+    title: {
+      en: 'Quick Sales',
+      kh: 'Quick Sales',
+    },
+    description: {
+      en: 'Quick Sales is a trusted IT solution with a platform CRM to empower and make informed systems for business.',
+      kh: 'ការលក់រហ័សគឺជាដំណោះស្រាយ IT ដែលអាចទុកចិត្តបានជាមួយនឹងវេទិកា CRM ដើម្បីផ្តល់សិទ្ធិអំណាច និងបង្កើតប្រព័ន្ធព័ត៌មានសម្រាប់អាជីវកម្ម។',
+    },
+    menuGroups: [
+      {
+        id: 'home',
+        title: {
+          en: 'Home',
+          kh: 'ទំព័រដើម',
+        },
+        items: [
+          { en: 'Home', kh: 'ទំព័រដើម', href: '#Home-content' },
+          { en: 'Service', kh: 'សេវាកម្ម', href: '#Service-content' },
+          { en: 'Pricing', kh: 'តម្លៃ', href: '#Pricing-content' },
+          { en: 'About', kh: 'អំពីពួកយើង', href: '#About-content' },
+        ],
+      },
+      {
+        id: 'company',
+        title: {
+          en: 'Company',
+          kh: 'ក្រុមហ៊ុន',
+        },
+        items: [
+          { en: 'Company', kh: 'ក្រុមហ៊ុន', href: '#' },
+          { en: 'Career', kh: 'អាជីព', href: '#' },
+          { en: 'Internship', kh: 'កម្មសិក្សា', href: '#' },
+          { en: 'About Us', kh: 'អំពីពួកយើង', href: '#About-content' },
+        ],
+      },
+    ],
+    contactTitle: {
+      en: 'Contact',
+      kh: 'ទំនាក់ទំនង',
+    },
+    contacts: [
+      {
+        img: facebook,
+        text: 'Facebook',
+        href: 'https://www.facebook.com/quicksalescrm/',
+      },
+      {
+        img: telegram,
+        text: 'Telegram',
+        href: 'https://t.me/ouchamroeun',
+      },
+    ],
+  },
+};
+
+export default siteContent;
