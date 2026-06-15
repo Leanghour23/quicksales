@@ -1327,14 +1327,37 @@ select {
 
 @media (max-width: 900px) {
   .Footer {
-    flex-wrap: wrap;
-    gap: 30px;
-    padding: 40px 30px;
+    flex-direction: column;
+    gap: 28px;
+    padding: 40px 24px;
   }
 
-  .Footer .Qs {
+  .footer-left {
+    padding-left: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .footer-left .Qs {
     width: 100%;
     max-width: 100%;
+  }
+
+  .footer-left .Qs p {
+    padding: 0;
+    max-width: 620px;
+  }
+
+  .footer-right {
+    max-width: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px 40px;
+  }
+
+  #Contact {
+    grid-column: 1 / -1;
   }
 
   .Service-content,
@@ -1462,7 +1485,26 @@ select {
 
   .Footer {
     flex-direction: column;
-    padding: 30px 20px;
+    padding: 30px 18px;
+    gap: 24px;
+  }
+
+  .footer-left {
+    padding-left: 0;
+  }
+
+  .footer-left .Qs p {
+    padding: 0;
+    max-width: none;
+  }
+
+  .footer-left .Qs h2 {
+    font-size: 26px;
+  }
+
+  .footer-right {
+    grid-template-columns: 1fr;
+    gap: 22px;
   }
 
   .Footer .footer-group,
