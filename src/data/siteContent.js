@@ -35,15 +35,15 @@ const siteContent = {
           {
             link: '#service-cmd',
             label: {
-              en: 'COMTOMER RELATIONSHIP MANAGEMENT',
-              kh: 'COMTOMER RELATIONSHIP MANAGEMENT',
+              en: 'Comtomer Relationship Management',
+              kh: 'Comtomer Relationship Management',
             },
           },
           {
             link: '#service-acc',
             label: {
-              en: 'ACCOUNTING',
-              kh: 'ACCOUNTING',
+              en: 'Accounting',
+              kh: 'Accounting',
             },
           },
         ],
@@ -162,8 +162,8 @@ const siteContent = {
       kh: 'ស្វែងរកជួរសេវាកម្មដែលយើងផ្តល់ដើម្បីជួយអ្នកបង្កើនសក្តានុពលនៃប្រព័ន្ធ CRM របស់យើង។',
     },
     subtitle: {
-      en: 'COMTOMER RELATIONSHIP MANAGEMENT',
-      kh: 'COMTOMER RELATIONSHIP MANAGEMENT',
+      en: 'Comtomer Relationship Management',
+      kh: 'Comtomer Relationship Management',
     },
     cards: [
       {
@@ -255,14 +255,14 @@ const siteContent = {
     },
     actions: [
       {
-        en: 'COMTOMER RELATIONSHIP MANAGEMENT',
-        kh: 'COMTOMER RELATIONSHIP MANAGEMENT',
+        en: 'Comtomer Relationship Management',
+        kh: 'Comtomer Relationship Management',
         href: '#Pricing-content',
         target: 'crm',
       },
       {
-        en: 'ACCOUNTING',
-        kh: 'ACCOUNTING',
+        en: 'Accounting',
+        kh: 'Accounting',
         href: '#Pricing-content',
         target: 'acc',
       },
@@ -491,6 +491,49 @@ const siteContent = {
           en: "Deciding whether a CRM (Customer Relationship Management) system is right for your business depends on your specific needs, the challenges you're facing, and your business goals. Here are some key signs that a CRM might benefit your organization.",
           kh: 'ការសម្រេចចិត្តថាតើប្រព័ន្ធ CRM (ការគ្រប់គ្រងទំនាក់ទំនងអតិថិជន) ត្រឹមត្រូវសម្រាប់អាជីវកម្មរបស់អ្នក អាស្រ័យលើតម្រូវការជាក់លាក់របស់អ្នក បញ្ហាប្រឈមដែលអ្នកកំពុងប្រឈមមុខ និងគោលដៅអាជីវកម្មរបស់អ្នក។ នេះគឺជាសញ្ញាសំខាន់ៗមួយចំនួនដែល CRM អាចផ្តល់អត្ថប្រយោជន៍ដល់ស្ថាប័នរបស់អ្នក។',
         },
+      },
+    ],
+  },
+  Testimonuals: {
+    eyebrow: "Testimonials",
+    heading: "What Our Users Are Saying",
+    subheading: "Real Stories of Success and Satisfaction from Our Diverse Community",
+    items: [
+      {
+        text: "This platform has completely transformed the way I manage my business finances. The real-time transaction tracking and seamless payment options have saved me so much time and effort!",
+        name: "John Davis",
+        role: "Small Business Owner",
+        img: "https://randomuser.me/api/portraits/men/32.jpg",
+      },
+      {
+        text: "As a freelancer, managing my finances can be overwhelming. The budgeting tools and personalized insights have made it so much easier to stay on top of my expenses and plan for the future.",
+        name: "Emily Smith",
+        role: "Freelancer",
+        img: "https://randomuser.me/api/portraits/women/44.jpg",
+      },
+      {
+        text: "The investment options and portfolio management tools on this platform are top-notch. It's a game-changer for anyone serious about growing their wealth.",
+        name: "Michael Rodriguez",
+        role: "Investor",
+        img: "https://randomuser.me/api/portraits/men/56.jpg",
+      },
+      {
+        text: "The security features are outstanding. Knowing that my financial data is protected gives me peace of mind, and the platform's efficiency makes it a pleasure to use.",
+        name: "James Kim",
+        role: "IT Consultant",
+        img: "https://randomuser.me/api/portraits/men/22.jpg",
+      },
+      {
+        text: "I never thought managing money could be this simple! The user-friendly interface and secure transaction process give me the confidence to handle my finances independently.",
+        name: "Sarah Lee",
+        role: "College Student",
+        img: "https://randomuser.me/api/portraits/women/68.jpg",
+      },
+      {
+        text: "The platform's intuitive design and robust features have been a game-changer for my startup. It's helped me streamline operations and focus on growing my business.",
+        name: "Laura Brown",
+        role: "Entrepreneur",
+        img: "https://randomuser.me/api/portraits/women/90.jpg",
       },
     ],
   },

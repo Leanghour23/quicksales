@@ -31,7 +31,6 @@ function App() {
   const heroSubtitle = getText(siteContent.hero.subtitle);
   const heroDescription = getText(siteContent.hero.description);
   const heroCta = getText(siteContent.hero.cta);
-  const clientTitle = getText(siteContent.hero.clients.title);
   const clientDescription = getText(siteContent.hero.clients.description);
   const aboutTitle = getText(siteContent.about.title);
   const aboutDescription = getText(siteContent.about.description);
@@ -388,6 +387,29 @@ function App() {
         </div>
       </div>
 
+      <div className="Testimonuals">
+          <div className="testimonials-header">
+            <span className="testimonials-eyebrow">{siteContent.Testimonuals.eyebrow}</span>
+            <h2>{siteContent.Testimonuals.heading}</h2>
+            <p>{siteContent.Testimonuals.subheading}</p>
+          </div>
+
+          <div className="testimonials-grid">
+            {siteContent.Testimonuals.items.map((t, i) => (
+              <div className="testimonial-card" key={i}>
+                <p className="testimonial-text">"{t.text}"</p>
+                <div className="testimonial-author">
+                  <img src={t.img} alt={t.name} className="testimonial-avatar" />
+                  <div>
+                    <p className="testimonial-name">{t.name}</p>
+                    <p className="testimonial-role">{t.role}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+        
       <div className="Footer" data-aos="fade-up">
         <div className="footer-left">
           <div className="Qs">
@@ -395,7 +417,6 @@ function App() {
             <p>{footerDescription}</p>
           </div>
         </div>
-
         <div className="footer-right">
           {siteContent.footer.menuGroups.map((group) => (
             <div id={group.id} className="footer-group" key={group.id}>
