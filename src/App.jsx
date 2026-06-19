@@ -422,7 +422,6 @@ function App() {
               <h2><span>{footerTitle}</span></h2>
               <p>{footerDescription}</p>
               </div>
-              <span>{footerSpan}</span>
             </div>
           <div className="footer-right">
             {siteContent.footer.menuGroups.map((group) => (
@@ -442,6 +441,9 @@ function App() {
                 </a>
               ))}
             </div>
+          </div>
+          <div className="footer-bottom">
+          <span>{footerSpan}</span>
           </div>
       </div>
     </>

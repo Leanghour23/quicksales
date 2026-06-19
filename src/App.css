@@ -1414,6 +1414,7 @@ select {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
+  flex-wrap: wrap;
   gap: 40px;
   padding: 60px clamp(16px, 6vw, 200px);
   background-color: #f8f9fa;
@@ -1424,6 +1425,7 @@ select {
   flex-direction: column;
   padding-left: 100px;
   max-width: 50%;
+  
 }
 
 .footer-left .Qs h2 {
@@ -1431,7 +1433,6 @@ select {
   font-weight: 700;
   color: #0070d2;
   margin-bottom: 12px;
-  margin-top: -50px;
 }
 
 .footer-left .Qs p {
@@ -1441,12 +1442,6 @@ select {
   margin: 0;
   padding: 0 200px 0 0;
   margin-bottom: 50px;
-}
-
-.footer-left span {
-  display: block;
-  margin-top: auto;
-  padding-top: 50px;
 }
 
 .footer-right {
@@ -1493,6 +1488,17 @@ select {
   height: 16px;
   margin-top: 2px;
   flex-shrink: 0;
+}
+
+.footer-bottom span{
+  display: block;
+  padding: 60px clamp(16px, 6vw, 100px);
+  padding-top: 16px;
+  margin-top: 10px;
+  width: 100%;
+  text-align: left;
+  font-size: 13px;
+  color: #555;
 }
 
 @media (max-width: 900px) {
