@@ -1719,6 +1719,9 @@ select {
     min-width: unset;
     width: 100%;
   }
+  .footer-bottom span{
+    padding: 0;
+  }
 
   .pricing-card--light {
     padding: 24px 18px;
