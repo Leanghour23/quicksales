@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import './App.css';
 import ukFlag from './assets/uk_flag.png';
 import cambodiaFlag from './assets/cambodia_flag.png';
@@ -11,11 +11,24 @@ function App() {
   const [serviceMenuOpen, setServiceMenuOpen] = useState(false);
   const [pricingGroup, setPricingGroup] = useState('crm');
   const { language, toggleLanguage } = useLanguage();
+  const serviceDropdownRef = useRef(null);
 
   const closeMenu = () => {
     setMenuOpen(false);
     setServiceMenuOpen(false);
   };
+
+  useEffect(() => {
+    const handleDocumentClick = (event) => {
+      if (serviceDropdownRef.current && !serviceDropdownRef.current.contains(event.target)) {
+        setServiceMenuOpen(false);
+      }
+    };
+
+    document.addEventListener('click', handleDocumentClick);
+
+    return () => document.removeEventListener('click', handleDocumentClick);
+  }, []);
 
   const getText = (value) => {
     if (language === 'kh') {
@@ -73,13 +86,13 @@ function App() {
           <img src={siteContent.nav.logo.img} className="logo" alt={navTitle} />
           <h3>{navTitle}</h3>
           <div className="nav-links">
-            {siteContent.nav.menus.map((menu) => (
-              menu.dropdown ? (
-                <div className="nav-dropdown" key={getText(menu.label)}>
-                  <button
-                    type="button"
-                    className="nav-link nav-dropdown-toggle"
-                    onClick={() => setServiceMenuOpen((current) => !current)}
+              {siteContent.nav.menus.map((menu) => (
+                menu.dropdown ? (
+                  <div className="nav-dropdown" key={getText(menu.label)} ref={serviceDropdownRef}>
+                    <button
+                      type="button"
+                      className="nav-link nav-dropdown-toggle"
+                      onClick={() => setServiceMenuOpen((current) => !current)}
                     aria-expanded={serviceMenuOpen}
                     aria-controls="service-dropdown-menu"
                   >
@@ -152,7 +165,10 @@ function App() {
               <button
                 type="button"
                 className="mobile-nav-link mobile-nav-dropdown-toggle"
-                onClick={() => setServiceMenuOpen((current) => !current)}
+                onClick={(event) => {
+                  event.stopPropagation();
+                  setServiceMenuOpen((current) => !current);
+                }}
                 aria-expanded={serviceMenuOpen}
               >
                 <span>{getText(menu.label)}</span>

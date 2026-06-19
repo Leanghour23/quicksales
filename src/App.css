@@ -145,9 +145,14 @@ select {
 }
 
 .nav-dropdown-menu.open,
-.nav-dropdown:hover .nav-dropdown-menu,
 .nav-dropdown:focus-within .nav-dropdown-menu {
   display: flex;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .nav-dropdown:hover .nav-dropdown-menu {
+    display: flex;
+  }
 }
 
 .nav-dropdown-link {
