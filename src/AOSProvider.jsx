@@ -4,8 +4,8 @@ import AOS from 'aos';
 function AOSProvider({ children }) {
   useEffect(() => {
     AOS.init({
-      duration: 800,
-      easing: 'ease-out-cubic',
+      duration: 1000,
+      easing: 'ease-out-quart',
       once: true,
       offset: 80,
     });

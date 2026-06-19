@@ -1,20 +1,27 @@
-import logo from '../assets/logo.png';
+import logo from '../assets/logo-quicksales.jpg';
 import working from '../assets/working.jpg';
+import sale from '../assets/sales-management.png';
+import checklists from '../assets/checklists.png';
+import invoice from '../assets/invoice.png';
+import cash from '../assets/cash-flow.png';
 import meeting from '../assets/bussiness-meeting.jpg';
 import client1 from '../assets/client-logos/ppl.jpg';
 import client2 from '../assets/client-logos/suc.jpg';
 import client3 from '../assets/client-logos/pat.jpg';
 import client4 from '../assets/client-logos/stt.png';
-import contactImage from '../assets/img_contact.png';
-import supportImage from '../assets/img_support.png';
+import contactImage from '../assets/contact-book.png';
+import supportImage from '../assets/customer-support.png';
 import facebook from '../assets/facebook.png';
 import telegram from '../assets/telegram.png';
 
 const siteContent = {
   nav: {
     logo: {
-      img: logo,
-      text: 'Logo',
+        img: logo,
+        text: 'Logo',
+      title: {
+        text: 'Quicksales',
+      },
     },
     telegramLink: 'https://t.me/ouchamroeun',
     menus: [
@@ -74,19 +81,19 @@ const siteContent = {
   },
   hero: {
     title: {
-      en: 'QuickSales',
-      kh: 'QuickSales',
+      en: 'Easy use,',
+      kh: 'Easy use,',
     },
     subtitle: {
-      en: 'CRM Service',
-      kh: 'CRM Service',
+      en: 'Easy sales',
+      kh: 'Easy sales',
     },
     description: {
-      en: "Exceptional support: our dedicated support team is here to help you every step of the way. From onboarding to troubleshooting, we're committed to ensuring your CRM experience is smooth and effective.",
+      en: "Quicksales enables faster issue resolution, increases customer retention, and drives greater customer happiness.",
       kh: 'ការគាំទ្រដ៏ល្អឥតខ្ចោះ៖ ក្រុមគាំទ្រដែលយើងខិតខំរបស់យើងនៅទីនេះដើម្បីជួយអ្នកគ្រប់ជំហាន។ ចាប់ពីការចាប់ផ្តើមប្រើប្រាស់រហូតដល់ការដោះស្រាយបញ្ហា យើងប្តេជ្ញាធានាថាបទពិសោធន៍ CRM របស់អ្នករលូន និងមានប្រសិទ្ធភាព។',
     },
     cta: {
-      en: 'Get Started',
+      en: 'Get Started Now',
       kh: 'ចាប់ផ្តើម',
     },
     clients: {
@@ -186,7 +193,7 @@ const siteContent = {
           en: 'CRMs help sales teams with pipeline tracking, deal management.',
           kh: 'CRM ជួយក្រុមលក់ជាមួយនឹងការតាមដានបំពង់លក់ និងការគ្រប់គ្រងកិច្ចព្រមព្រៀង។',
         },
-        icon: working,
+        icon: sale,
       },
       {
         title: {
@@ -207,36 +214,36 @@ const siteContent = {
     accCards: [
       {
         title: {
-          en: 'Invoices and Billing',
-          kh: 'Invoices and Billing',
+          en: 'Inventory & Asset Optimization',
+          kh: 'Inventory & Asset Optimization',
         },
         description: {
-          en: 'Track invoices, issue billing documents, and keep payment records organized in one place.',
+          en: 'I transform inventory from a cost center into a strategic asset. Through meticulous tracking, predictive analysis, and streamlined workflows, I ensure operational precision. My focus is on reducing waste, increasing turnover, and delivering clear visibility across the entire supply chain.',
           kh: 'តាមដានវិក្កយបត្រ ចេញឯកសារវិក្កយបត្រ និងរក្សាទុកកំណត់ត្រាបង់ប្រាក់ឲ្យមានរបៀបរៀបរយនៅកន្លែងតែមួយ។',
         },
-        icon: contactImage,
+        icon: checklists,
       },
       {
         title: {
-          en: 'Payment Tracking',
-          kh: 'Payment Tracking',
+          en: 'Invoice & Billing Management',
+          kh: 'Invoice & Billing Management',
         },
         description: {
-          en: 'Monitor due dates, partial payments, and customer balances with clear financial visibility.',
+          en: 'Efficient billing is the backbone of healthy cash flow. My approach focuses on creating streamlined invoicing systems that eliminate payment delays and reduce administrative errors. I design solutions that automate invoice generation, track payment statuses in real-time, and simplify reconciliation processes. From multi-currency transactions to tax compliance and recurring billing models, I ensure that every financial transaction is transparent, accurate, and audit-ready—allowing businesses to get paid faster and with less friction.',
           kh: 'តាមដានកាលបរិច្ឆេទដែលត្រូវបង់ ការបង់ប្រាក់មួយផ្នែក និងសមតុល្យអតិថិជនជាមួយនឹងទិដ្ឋភាពហិរញ្ញវត្ថុច្បាស់លាស់។',
         },
-        icon: supportImage,
+        icon: invoice,
       },
       {
         title: {
-          en: 'Reports and Reconciliation',
-          kh: 'Reports and Reconciliation',
+          en: 'Expense Management',
+          kh: 'Expense Management',
         },
         description: {
-          en: 'Generate financial reports and reconcile account activity faster with fewer manual steps.',
+          en: 'Controlling costs is just as critical as driving revenue. My approach to expense management focuses on creating full visibility into where money is going—from operational costs and vendor payments to travel expenses and overhead. I design systems that automate expense tracking, enforce spending policies, and provide real-time budget monitoring. By categorizing expenditures and identifying cost-saving opportunities, I help businesses reduce waste, prevent budget overruns, and make data-driven financial decisions that protect the bottom line.',
           kh: 'បង្កើតរបាយការណ៍ហិរញ្ញវត្ថុ និងផ្ទៀងផ្ទាត់សកម្មភាពគណនីបានលឿនជាងមុន ដោយចំនួនជំហានធ្វើដោយដៃតិចជាងមុន។',
         },
-        icon: working,
+        icon: cash,
       },
     ],
   },

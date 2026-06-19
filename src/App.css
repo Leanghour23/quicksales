@@ -39,7 +39,7 @@ select {
   z-index: 1000;
   width: 100%;
   box-sizing: border-box;
-  padding: 20px 90px;
+  padding: 10px clamp(16px, 10vw, 200px);
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   gap: 24px;
@@ -55,7 +55,8 @@ select {
 .nav-left {
   flex: 1 1 auto;
   min-width: 0;
-  gap: 40px;
+  gap: 12px;
+  padding: 0;
 }
 
 .nav-right {
@@ -67,16 +68,27 @@ select {
 }
 
 .logo {
-  width: 150px;
-  height: auto;
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
   display: block;
   flex-shrink: 0;
+}
+
+.nav-left h3 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+  color: #111827;
+  letter-spacing: -0.03em;
+  white-space: nowrap;
 }
 
 .nav-links {
   display: flex;
   align-items: center;
-  padding: 0 100px;
+  padding: 0 clamp(24px, 6vw, 300px);
   gap: 70px;
   flex: 1 1 auto;
   min-width: 0;
@@ -300,8 +312,8 @@ select {
 
 @media (max-width: 1024px) {
   .nav-bar {
-    padding: 10px 20px;
-    gap: 12px;
+    padding: 10px 16px;
+    gap: 10px;
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
@@ -309,7 +321,7 @@ select {
 
   .nav-left {
     padding: 0;
-    gap: 0;
+    gap: 10px;
     align-items: center;
   }
 
@@ -318,7 +330,12 @@ select {
   }
 
   .logo {
-    width: 112px;
+    width: 42px;
+    height: 42px;
+  }
+
+  .nav-left h3 {
+    font-size: 20px;
   }
 
   .nav-menu-button {
@@ -375,72 +392,46 @@ select {
   }
 }
 
+.main-page {
+  padding: clamp(24px, 4vw, 40px) 200px;
+}
+
 .Home-content {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: clamp(40px, 5vw, 70px) clamp(20px, 8vw, 180px);
   gap: clamp(24px, 4vw, 40px);
   margin-top: 50px;
 }
 
 .content-left {
   margin-top: 0;
-  max-width: 40%;
+  max-width: 45%;
 }
 
 .content-left h1 {
-  font-size: 40px;
-  margin: 0 10px;
-  color: #0070d2;
+  font-size: 60px;
+  color: #16181B;
+  font-family: sans-serif;
 }
 
 .content-left p {
   font-size: 20px;
   margin: 10px 0;
-  color: #555;
-}
-
-.content-right {
-  width: min(700px, 100%);
-  height: auto;
-  padding-top: 6px;
-}
-
-.cta-button {
-  margin-top: 10px;
-  padding: 12px 24px;
-  background-color: #0070d2;
-  color: #fff;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-.cta-button:hover {
-  background-color: #0056b3;
-}
-
-.client p {
-  margin-top: 20px;
-  margin-bottom: 0;
-  font-size: 20px;
-  padding: 0 10px;
-  color: #000000;
+  color: #494B5B;
   font-family: sans-serif;
 }
 
-.client img {
-  width: 100px;
+.content-right {
+  max-width: 60%;
   height: auto;
-  margin: 20px 20px;
-  border-radius: 20px;
-  cursor: pointer;
 }
 
-.content-right {
-  max-width: 50%;
+.content-right img {
+  margin-top: 50px;
+  width: 100%;
+  max-width: 650px;
+  height: auto;
 }
 
 .content-right iframe {
@@ -451,12 +442,77 @@ select {
   aspect-ratio: 16 / 9;
 }
 
+.cta-button {
+  margin-top: 10px;
+  padding: 12px 24px;
+  background-color: #0056b3;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+.cta-button:hover {
+  background-color: #0070d2;
+}
+
+.cta-button--secondary {
+  background: #fff;
+  color: #1f2937;
+  border: 1px solid #d6dbe6;
+  /* box-shadow: 0 1px 2px rgba(15, 23, 42, 0.06); */
+}
+
+.cta-button--secondary:hover {
+  background: #f8fafc;
+  color: #111827;
+  border-color: #c9d1df;
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: nowrap;
+}
+
+.hero-actions .cta-button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.client p {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #000000;
+  font-family: sans-serif;
+  width: 100%;
+}
+
+.client {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.client img {
+  width: 100px;
+  height: auto;
+  margin: 0;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
 .About-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: clamp(24px, 4vw, 40px) clamp(20px, 8vw, 180px);
   gap: clamp(24px, 4vw, 40px);
+  margin-top: 100px;
 }
 
 .about-left {
@@ -491,7 +547,24 @@ select {
   justify-content: center;
   padding: 6px 12px;
   margin-bottom: 10px;
-  border-radius: 999px;
+  border-radius: 10px;
+  background: rgba(73, 124, 235, 0.1);
+  color: #0070d2;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-family: sans-serif;
+}
+
+.section-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 16px;
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 10px;
   background: rgba(73, 124, 235, 0.1);
   color: #0070d2;
   font-size: 13px;
@@ -516,7 +589,7 @@ select {
 }
 
 .Service-content {
-  padding: clamp(36px, 5vw, 50px) clamp(20px, 8vw, 180px);
+  margin-top: 100px;
   text-align: center;
 }
 
@@ -648,11 +721,23 @@ select {
 }
 
 @media (max-width: 900px) {
+  .main-page {
+    padding: 24px 16px;
+  }
 
-  .Home-content,
+  .Home-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 24px 0;
+    gap: 20px;
+  }
+  .Home-content h1{
+    margin-bottom: 20px;
+  }
   .About-content {
     flex-direction: column;
-    padding: 30px 16px;
+    padding: 24px 0;
     gap: 20px;
   }
 
@@ -666,13 +751,15 @@ select {
     align-items: center;
   }
 
-  .content-right iframe {
-    width: 100%;
+  .content-right img {
+    margin-top: 0;
+    max-width: 100%;
   }
 
   .about-left img {
     border-radius: 28px;
     width: 100%;
+    max-width: 100%;
   }
 
   .content-left h1 {
@@ -681,6 +768,11 @@ select {
 
   .content-left p {
     font-size: 16px;
+  }
+
+  .hero-actions {
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   .content-right {
@@ -698,10 +790,27 @@ select {
     width: 100%;
     padding: 0;
   }
+
+  .client {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .service-card {
+    min-height: 0;
+  }
+
+  .pricing-card {
+    min-height: 0;
+  }
+
+  .pricing-card__split {
+    padding: 24px 18px;
+  }
 }
 
 .Pricing-content {
-  padding: clamp(36px, 5vw, 50px) clamp(20px, 6vw, 120px);
+  margin-top: 100px;
   text-align: center;
 }
 
@@ -995,6 +1104,9 @@ select {
 }
 
 @media (max-width: 1200px) {
+  .main-page {
+    padding: clamp(24px, 4vw, 40px) 48px;
+  }
 
   .Home-content,
   .About-content {
@@ -1017,13 +1129,31 @@ select {
     max-width: 100%;
   }
 
+  .content-right img {
+    margin-top: 24px;
+    max-width: 560px;
+  }
+
+  .service-card {
+    min-height: 300px;
+  }
+
+  .pricing-card {
+    min-height: 280px;
+  }
+
+  .pricing-card__split {
+    gap: 18px;
+    padding: 28px 24px;
+  }
+
   .card-layout {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 .FAQ {
-  padding: clamp(40px, 6vw, 70px) clamp(16px, 4vw, 24px) clamp(70px, 8vw, 100px);
+  margin-top: 100px;
 }
 
 .faq-header {
@@ -1038,7 +1168,7 @@ select {
   justify-content: center;
   padding: 6px 12px;
   margin-bottom: 10px;
-  border-radius: 999px;
+  border-radius: 10px;
   background: rgba(73, 124, 235, 0.1);
   color: #0070d2;
   font-size: 13px;
@@ -1136,7 +1266,7 @@ select {
 }
 
 .Testimonuals {
-  padding: clamp(40px, 6vw, 80px) clamp(20px, 8vw, 180px);
+  margin-top: 100px;
   text-align: center;
 }
 
@@ -1152,7 +1282,7 @@ select {
   align-items: center;
   justify-content: center;
   padding: 6px 14px;
-  border-radius: 999px;
+  border-radius: 10px;
   background: rgba(73, 124, 235, 0.1);
   color: #0070d2;
   font-size: 13px;
@@ -1257,7 +1387,7 @@ select {
   justify-content: space-between;
   align-items: flex-start;
   gap: 40px;
-  padding: 60px 80px;
+  padding: 60px clamp(16px, 6vw, 200px);
   background-color: #f8f9fa;
 }
 
@@ -1402,18 +1532,17 @@ select {
 }
 
 @media (max-width: 576px) {
+  .main-page {
+    padding: 20px 14px;
+  }
+
   .logo {
-    width: 110px;
+    width: 38px;
+    height: 38px;
   }
 
-  .Home-content,
-  .About-content {
-    padding: 24px 16px;
-  }
-
-  .Service-content,
-  .Pricing-content {
-    padding: 24px 16px;
+  .nav-left h3 {
+    font-size: 20px;
   }
 
   .content-left h1 {
@@ -1435,14 +1564,26 @@ select {
     width: 100%;
   }
 
+  .hero-actions .cta-button {
+    width: auto;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
   .client img {
     width: 78px;
-    margin: 12px 8px;
+    margin: 0;
+  }
+
+  .client {
+    justify-content: center;
+    text-align: center;
   }
 
   .about-right h2,
-  .Service-content h2,
-  .Pricing-content h2,
+  .section-badge,
   .FAQ h2 {
     font-size: 22px;
   }

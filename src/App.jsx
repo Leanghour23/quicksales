@@ -4,6 +4,7 @@ import ukFlag from './assets/uk_flag.png';
 import cambodiaFlag from './assets/cambodia_flag.png';
 import siteContent from './data/siteContent';
 import useLanguage from './context/useLanguage';
+import img from './assets/img-home-right.jpg';
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -24,7 +25,7 @@ function App() {
     return value.en;
   };
 
-  const navTitle = getText(siteContent.nav.logo);
+  const navTitle = siteContent.nav.logo.title.text;
   const languageButtonLabel = language === 'en' ? 'English' : 'Khmer';
   const languageButtonImage = language === 'en' ? ukFlag : cambodiaFlag;
   const heroTitle = getText(siteContent.hero.title);
@@ -67,6 +68,7 @@ function App() {
       <div className="nav-bar">
         <div className="nav-left">
           <img src={siteContent.nav.logo.img} className="logo" alt={navTitle} />
+          <h3>{navTitle}</h3>
           <div className="nav-links">
             {siteContent.nav.menus.map((menu) => (
               menu.dropdown ? (
@@ -192,122 +194,143 @@ function App() {
         </button>
       </div>
 
-      <div className="Home-content" id="Home-content">
-        <div className="content-left" data-aos="fade-right">
-          <h1>{heroTitle}</h1>
-          <h1>{heroSubtitle}</h1>
-          <p>{heroDescription}</p>
-          <button className="cta-button">{heroCta}</button>
-          <div className="client">
-            <p>{clientDescription}</p>
-            {siteContent.hero.clients.logos.map((client) => (
-              <img key={client.text} src={client.img} alt={client.text} />
+      <div className="main-page">
+        <div className="Home-content" id="Home-content">
+          <div className="content-left" data-aos="fade-right">
+            <h1>{heroTitle}</h1>
+            <h1>{heroSubtitle}</h1>
+            <p>{heroDescription}</p>
+            <div className="hero-actions">
+              <button className="cta-button">{heroCta}</button>
+              <button type="button" className="cta-button cta-button--secondary">
+                Learn More ↗
+              </button>
+            </div>
+            <div className="client">
+              <p>{clientDescription}</p>
+              {siteContent.hero.clients.logos.map((client) => (
+                <img key={client.text} src={client.img} alt={client.text} />
+              ))}
+            </div>
+          </div>
+          <div className="content-right" data-aos="fade-left">
+            <img src={img} alt="" />
+          </div>
+        </div>
+
+        <div className="About-content" id="About-content">
+          <div className="about-left" data-aos="fade-up">
+            <img src={siteContent.about.banner.img} alt={siteContent.about.banner.text} />
+          </div>
+          <div className="about-right" data-aos="fade-left">
+            <span>{aboutTitle}</span>
+            <h2>{aboutDescription}</h2>
+            {siteContent.about.points.map((point, index) => (
+              <p key={`${getText(point.title)}-${index}`}>
+                {getText(point.detail)}
+              </p>
             ))}
           </div>
         </div>
-        <div className="content-right" data-aos="fade-left">
-          <iframe
-            src="https://www.youtube.com/embed/9aeAgZumtyc"
-            title="Quicksales CRM System"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-        </div>
-      </div>
 
-      <div className="About-content" id="About-content">
-        <div className="about-left" data-aos="fade-up">
-          <img src={siteContent.about.banner.img} alt={siteContent.about.banner.text} />
-        </div>
-        <div className="about-right" data-aos="fade-left">
-          <span>{aboutTitle}</span>
-          <h2>{aboutDescription}</h2>
-          {siteContent.about.points.map((point, index) => (
-            <p key={`${getText(point.title)}-${index}`}>
-              {getText(point.detail)}
-            </p>
-          ))}
-        </div>
-      </div>
+        <div className="Service-content" id="Service-content">
+          <span className="section-badge" data-aos="fade-up">{serviceTitle}</span>
+          <p data-aos="fade-up" data-aos-delay="100">
+            {serviceDescription}
+          </p>
+          <button type="button" className="service-chip" id="service-cmd" data-aos="fade-up" data-aos-delay="80">
+            {serviceSubtitle}
+          </button>
+          <div className="service-layout">
+            {siteContent.service.cards.map((card, index) => {
+              const delay = index * 120;
 
-      <div className="Service-content" id="Service-content">
-        <h2 data-aos="fade-up">{serviceTitle}</h2>
-        <p data-aos="fade-up" data-aos-delay="100">
-          {serviceDescription}
-        </p>
-        <button type="button" className="service-chip" id="service-cmd" data-aos="fade-up" data-aos-delay="80">
-          {serviceSubtitle}
-        </button>
-        <div className="service-layout">
-          {siteContent.service.cards.map((card, index) => {
-            const delay = index * 120;
-
-            return (
-              <div className="service-card" data-aos="zoom-in" data-aos-delay={delay} key={getText(card.title)}>
-                <div className="service-icon">
-                  <img src={card.icon} alt={getText(card.title)} />
+              return (
+                <div className="service-card" data-aos="zoom-in" data-aos-delay={delay} key={getText(card.title)}>
+                  <div className="service-icon">
+                    <img src={card.icon} alt={getText(card.title)} />
+                  </div>
+                  <h3>{getText(card.title)}</h3>
+                  <p>{getText(card.description)}</p>
                 </div>
-                <h3>{getText(card.title)}</h3>
-                <p>{getText(card.description)}</p>
-              </div>
-            );
-          })}
-        </div>
-        <button type="button" className="service-chip" id="service-acc" data-aos="fade-up" data-aos-delay="120">
-          {serviceAccTitle}
-        </button>
-        <div className="service-layout service-layout--secondary">
-          {siteContent.service.accCards.map((card, index) => {
-            const delay = index * 120;
+              );
+            })}
+          </div>
+          <button type="button" className="service-chip" id="service-acc" data-aos="fade-up" data-aos-delay="120">
+            {serviceAccTitle}
+          </button>
+          <div className="service-layout service-layout--secondary">
+            {siteContent.service.accCards.map((card, index) => {
+              const delay = index * 120;
 
-            return (
-              <div className="service-card" data-aos="zoom-in" data-aos-delay={delay} key={getText(card.title)}>
-                <div className="service-icon">
-                  <img src={card.icon} alt={getText(card.title)} />
+              return (
+                <div className="service-card" data-aos="zoom-in" data-aos-delay={delay} key={getText(card.title)}>
+                  <div className="service-icon">
+                    <img src={card.icon} alt={getText(card.title)} />
+                  </div>
+                  <h3>{getText(card.title)}</h3>
+                  <p>{getText(card.description)}</p>
                 </div>
-                <h3>{getText(card.title)}</h3>
-                <p>{getText(card.description)}</p>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
         </div>
-      </div>
 
-      <div className="Pricing-content" id="Pricing-content">
-        <h2 data-aos="fade-up">{pricingTitle}</h2>
-        <h4 data-aos="fade-up" data-aos-delay="100">{pricingSubtitle}</h4>
-        <p data-aos="fade-up" data-aos-delay="150">{pricingDescription}</p>
-        <div className="pricing-actions" data-aos="fade-up" data-aos-delay="180">
-          {pricingActions.map((action) => (
-            <button
-              key={action.target}
-              type="button"
-              className={`pricing-action ${pricingGroup === action.target ? 'is-active' : ''}`}
-              onClick={() => setPricingGroup(action.target)}
-              aria-pressed={pricingGroup === action.target}
-            >
-              {getText(action)}
-            </button>
-          ))}
-        </div>
-        <div className="card-layout">
-          {pricingPlans.map((plan, index) => {
-            const delay = index * 120;
-            const pricingButtonLabel = language === 'kh' ? 'ចាប់ផ្តើម' : 'Get Started';
-            const isDark = plan.variant === 'dark';
-
-            return (
-              <div
-                className={`pricing-card ${isDark ? 'pricing-card--dark' : 'pricing-card--light'}`}
-                data-aos="flip-left"
-                data-aos-delay={delay}
-                key={getText(plan.title)}
-                id={plan.anchor}
+        <div className="Pricing-content" id="Pricing-content">
+          <span className="section-badge" data-aos="fade-up">{pricingTitle}</span>
+          <h4 data-aos="fade-up" data-aos-delay="100">{pricingSubtitle}</h4>
+          <p data-aos="fade-up" data-aos-delay="150">{pricingDescription}</p>
+          <div className="pricing-actions" data-aos="fade-up" data-aos-delay="180">
+            {pricingActions.map((action) => (
+              <button
+                key={action.target}
+                type="button"
+                className={`pricing-action ${pricingGroup === action.target ? 'is-active' : ''}`}
+                onClick={() => setPricingGroup(action.target)}
+                aria-pressed={pricingGroup === action.target}
               >
-                {isDark ? (
-                  <div className="pricing-card__split">
-                    <div className="pricing-card__content">
+                {getText(action)}
+              </button>
+            ))}
+          </div>
+          <div className="card-layout">
+            {pricingPlans.map((plan, index) => {
+              const delay = index * 120;
+              const pricingButtonLabel = language === 'kh' ? 'ចាប់ផ្តើម' : 'Get Started';
+              const isDark = plan.variant === 'dark';
+
+              return (
+                <div
+                  className={`pricing-card ${isDark ? 'pricing-card--dark' : 'pricing-card--light'}`}
+                  data-aos="flip-left"
+                  data-aos-delay={delay}
+                  key={getText(plan.title)}
+                  id={plan.anchor}
+                >
+                  {isDark ? (
+                    <div className="pricing-card__split">
+                      <div className="pricing-card__content">
+                        <h2>{getText(plan.title)}</h2>
+                        <p className="pricing-copy">{getText(plan.description)}</p>
+                        <div className="pricing-price">
+                          <span className="pricing-amount">{plan.price}$</span>
+                          <span className="pricing-period">/ month</span>
+                        </div>
+                        <button type="button" className="pricing-button">
+                          {pricingButtonLabel}
+                        </button>
+                      </div>
+                      <div className="pricing-card__aside">
+                        {plan.featureHeading ? <span className="pricing-feature-heading">{getText(plan.featureHeading)}</span> : null}
+                        <ul className="pricing-features">
+                          {plan.features.map((feature) => (
+                            <li key={feature.en}>{getText(feature)}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                  ) : (
+                    <>
                       <h2>{getText(plan.title)}</h2>
                       <p className="pricing-copy">{getText(plan.description)}</p>
                       <div className="pricing-price">
@@ -317,77 +340,56 @@ function App() {
                       <button type="button" className="pricing-button">
                         {pricingButtonLabel}
                       </button>
-                    </div>
-                    <div className="pricing-card__aside">
-                      {plan.featureHeading ? <span className="pricing-feature-heading">{getText(plan.featureHeading)}</span> : null}
-                      <ul className="pricing-features">
-                        {plan.features.map((feature) => (
-                          <li key={feature.en}>{getText(feature)}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                ) : (
-                  <>
-                    <h2>{getText(plan.title)}</h2>
-                    <p className="pricing-copy">{getText(plan.description)}</p>
-                    <div className="pricing-price">
-                      <span className="pricing-amount">{plan.price}$</span>
-                      <span className="pricing-period">/ month</span>
-                    </div>
-                    <button type="button" className="pricing-button">
-                      {pricingButtonLabel}
-                    </button>
-                  </>
-                )}
-              </div>
-            );
-          })}
-        </div>
-      </div>
-
-      <div className="FAQ">
-        <div className="faq-header" data-aos="fade-up">
-          <span className="faq-eyebrow">{faqTitle}</span>
-          <h2>{faqHeading}</h2>
-          <p>{faqDescription1}</p>
-        </div>
-        <div className="accordion accordion-flush" id="accordionFlushExample">
-          {siteContent.faq.accordion.map((item, index) => {
-            const headingId = `flush-heading-${index}`;
-            const collapseId = `flush-collapse-${index}`;
-            const accordionTitle = getText(item.title);
-            const accordionDetail = getText(item.detail);
-
-            return (
-              <div className="accordion-item" key={headingId}>
-                <h2 className="accordion-header" id={headingId}>
-                  <button
-                    className="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target={`#${collapseId}`}
-                    aria-expanded="false"
-                    aria-controls={collapseId}
-                  >
-                    <p>{accordionTitle}</p>
-                  </button>
-                </h2>
-                <div
-                  id={collapseId}
-                  className="accordion-collapse collapse"
-                  aria-labelledby={headingId}
-                  data-bs-parent="#accordionFlushExample"
-                >
-                  <div className="accordion-body">{accordionDetail}</div>
+                    </>
+                  )}
                 </div>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
         </div>
-      </div>
 
-      <div className="Testimonuals">
+        <div className="FAQ">
+          <div className="faq-header" data-aos="fade-up">
+            <span className="faq-eyebrow">{faqTitle}</span>
+            <h2>{faqHeading}</h2>
+            <p>{faqDescription1}</p>
+          </div>
+          <div className="accordion accordion-flush" id="accordionFlushExample">
+            {siteContent.faq.accordion.map((item, index) => {
+              const headingId = `flush-heading-${index}`;
+              const collapseId = `flush-collapse-${index}`;
+              const accordionTitle = getText(item.title);
+              const accordionDetail = getText(item.detail);
+
+              return (
+                <div className="accordion-item" key={headingId}>
+                  <h2 className="accordion-header" id={headingId}>
+                    <button
+                      className="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target={`#${collapseId}`}
+                      aria-expanded="false"
+                      aria-controls={collapseId}
+                    >
+                      <p>{accordionTitle}</p>
+                    </button>
+                  </h2>
+                  <div
+                    id={collapseId}
+                    className="accordion-collapse collapse"
+                    aria-labelledby={headingId}
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div className="accordion-body">{accordionDetail}</div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
+        <div className="Testimonuals">
           <div className="testimonials-header">
             <span className="testimonials-eyebrow">{siteContent.Testimonuals.eyebrow}</span>
             <h2>{siteContent.Testimonuals.heading}</h2>
@@ -409,33 +411,34 @@ function App() {
             ))}
           </div>
         </div>
-        
+      </div>
+
       <div className="Footer" data-aos="fade-up">
-        <div className="footer-left">
-          <div className="Qs">
-            <h2><samp>{footerTitle}</samp></h2>
-            <p>{footerDescription}</p>
+          <div className="footer-left">
+            <div className="Qs">
+              <h2><samp>{footerTitle}</samp></h2>
+              <p>{footerDescription}</p>
+            </div>
           </div>
-        </div>
-        <div className="footer-right">
-          {siteContent.footer.menuGroups.map((group) => (
-            <div id={group.id} className="footer-group" key={group.id}>
-              <h3>{getText(group.title)}</h3>
-              {group.items.map((item) => (
-                <a key={item.en} href={item.href}>{getText(item)}</a>
+          <div className="footer-right">
+            {siteContent.footer.menuGroups.map((group) => (
+              <div id={group.id} className="footer-group" key={group.id}>
+                <h3>{getText(group.title)}</h3>
+                {group.items.map((item) => (
+                  <a key={item.en} href={item.href}>{getText(item)}</a>
+                ))}
+              </div>
+            ))}
+            <div id="Contact">
+              <h3>{footerContactTitle}</h3>
+              {siteContent.footer.contacts.map((contact) => (
+                <a href={contact.href} key={contact.text}>
+                  <img src={contact.img} alt={contact.text} />
+                  {contact.text}
+                </a>
               ))}
             </div>
-          ))}
-          <div id="Contact">
-            <h3>{footerContactTitle}</h3>
-            {siteContent.footer.contacts.map((contact) => (
-              <a href={contact.href} key={contact.text}>
-                <img src={contact.img} alt={contact.text} />
-                {contact.text}
-              </a>
-            ))}
           </div>
-        </div>
       </div>
     </>
   );
