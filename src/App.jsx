@@ -29,10 +29,12 @@ function App() {
   const languageButtonLabel = language === 'en' ? 'English' : 'Khmer';
   const languageButtonImage = language === 'en' ? ukFlag : cambodiaFlag;
   const heroTitle = getText(siteContent.hero.title);
-  const heroSubtitle = getText(siteContent.hero.subtitle);
-  const heroDescription = getText(siteContent.hero.description);
-  const heroCta = getText(siteContent.hero.cta);
-  const clientDescription = getText(siteContent.hero.clients.description);
+    const heroSubtitle = getText(siteContent.hero.subtitle);
+    const heroDescription = getText(siteContent.hero.description);
+    const heroCta = getText(siteContent.hero.cta);
+    const heroCta2 = getText(siteContent.hero.cta2);
+    const heroCta2Icon = siteContent.hero.cta2.icon;
+    const clientDescription = getText(siteContent.hero.clients.description);
   const aboutTitle = getText(siteContent.about.title);
   const aboutDescription = getText(siteContent.about.description);
   const serviceTitle = getText(siteContent.service.title);
@@ -199,14 +201,15 @@ function App() {
         <div className="Home-content" id="Home-content">
           <div className="content-left" data-aos="fade-right">
             <h1>{heroTitle}</h1>
-            <h1>{heroSubtitle}</h1>
-            <p>{heroDescription}</p>
-            <div className="hero-actions">
-              <button className="cta-button">{heroCta}</button>
-              <button type="button" className="cta-button cta-button--secondary">
-                Learn More ↗
-              </button>
-            </div>
+              <h1>{heroSubtitle}</h1>
+              <p>{heroDescription}</p>
+              <div className="hero-actions">
+                <button className="cta-button">{heroCta}</button>
+                <button className="cta-button2">
+                  <span>{heroCta2}</span>
+                  <img src={heroCta2Icon} alt="" aria-hidden="true" />
+                </button>
+              </div>
             <div className="client">
               <p>{clientDescription}</p>
               <div className="client-logos">

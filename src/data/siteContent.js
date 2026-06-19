@@ -13,6 +13,7 @@ import contactImage from '../assets/contact-book.png';
 import supportImage from '../assets/customer-support.png';
 import facebook from '../assets/facebook.png';
 import telegram from '../assets/telegram.png';
+import topRight from '../assets/top-right.png';
 
 const siteContent = {
   nav: {
@@ -95,6 +96,11 @@ const siteContent = {
     cta: {
       en: 'Get Started Now',
       kh: 'ចាប់ផ្តើម',
+    },
+    cta2: {
+      en: 'Learn more',
+      kh: 'Learn more',
+        icon: topRight,
     },
     clients: {
       title: {
