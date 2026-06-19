@@ -119,7 +119,7 @@ const siteContent = {
       kh: 'អំពីពួកយើង',
     },
     description: {
-      en: 'We provide service that you can rely on is simply dummy text of the printing and typesetting industry. Choose a CRM that offers high-quality customer service, resources, and tutorials.',
+      en: 'Experience the future of business with our secure, efficient, and user-friendly digital services',
       kh: 'យើងផ្តល់សេវាកម្មដែលអ្នកអាចពឹងផ្អែកបាន គឺគ្រាន់តែជាអត្ថបទមិនច្បាស់នៃឧស្សាហកម្មបោះពុម្ព និងវាយអក្សរ។ ជ្រើសរើស CRM ដែលផ្តល់នូវសេវាកម្មអតិថិជនគុណភាពខ្ពស់ ធនធាន និងការបង្រៀន។',
     },
     banner: {
@@ -133,7 +133,7 @@ const siteContent = {
           kh: 'រឿងរបស់យើង',
         },
         detail: {
-          en: 'We are small team, who have motivated to build the best CRM in southeast asia.',
+          en: 'Founded with the vision of revolutionizing the digital transformation, we are a leading digital tech company dedicated to providing innovative and business solutions.',
           kh: 'យើងជាក្រុមតូច ដែលបានជំរុញឱ្យបង្កើត CRM ល្អបំផុតនៅអាស៊ាន',
         },
       },
@@ -143,18 +143,8 @@ const siteContent = {
           kh: 'អ្វីទៅជាការលក់រហ័ស',
         },
         detail: {
-          en: 'Quick sales is the best CRM system in the southeast asia.',
+          en: 'Our cutting-edge platform ensures your transactions are safe, streamlined, and easy to manage, empowering you to take control of your bu journey with confidence and convenience.',
           kh: 'ការលក់រហ័សគឺជាប្រព័ន្ធ CRM ដ៏ល្អបំផុតនៅអាស៊ាន',
-        },
-      },
-      {
-        title: {
-          en: 'Quick Sales Careers',
-          kh: 'អាជីពក្នុង Quick Sales',
-        },
-        detail: {
-          en: 'You can become a partner in Digital.',
-          kh: 'អ្នកអាចក្លាយជាដៃគូរនៅក្នុងឌីជីថល',
         },
       },
     ],
@@ -552,6 +542,10 @@ const siteContent = {
     description: {
       en: 'Quick Sales is a trusted IT solution with a platform CRM to empower and make informed systems for business.',
       kh: 'ការលក់រហ័សគឺជាដំណោះស្រាយ IT ដែលអាចទុកចិត្តបានជាមួយនឹងវេទិកា CRM ដើម្បីផ្តល់សិទ្ធិអំណាច និងបង្កើតប្រព័ន្ធព័ត៌មានសម្រាប់អាជីវកម្ម។',
+    },
+    span: {
+      en: '© 2025 Quicksales.asia, inc. All rights reserved.',
+      kh: '© 2025 Quicksales.asia, inc. All rights reserved.',
     },
     menuGroups: [
       {

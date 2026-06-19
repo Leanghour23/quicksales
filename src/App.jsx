@@ -49,6 +49,7 @@ function App() {
   const faqDescription1 = getText(siteContent.faq.description1);
   const footerTitle = getText(siteContent.footer.title);
   const footerDescription = getText(siteContent.footer.description);
+  const footerSpan = getText(siteContent.footer.span);
   const footerContactTitle = getText(siteContent.footer.contactTitle);
   const openExternalLink = (url) => {
     window.open(url, '_blank', 'noopener,noreferrer');
@@ -417,11 +418,12 @@ function App() {
 
       <div className="Footer" data-aos="fade-up">
           <div className="footer-left">
-            <div className="Qs">
-              <h2><samp>{footerTitle}</samp></h2>
+              <div className="Qs">
+              <h2><span>{footerTitle}</span></h2>
               <p>{footerDescription}</p>
+              </div>
+              <span>{footerSpan}</span>
             </div>
-          </div>
           <div className="footer-right">
             {siteContent.footer.menuGroups.map((group) => (
               <div id={group.id} className="footer-group" key={group.id}>
