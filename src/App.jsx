@@ -4,7 +4,7 @@ import ukFlag from './assets/uk_flag.png';
 import cambodiaFlag from './assets/cambodia_flag.png';
 import siteContent from './data/siteContent';
 import useLanguage from './context/useLanguage';
-import img from './assets/img-home-right.jpg';
+import img from './assets/img-home-right.png';
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -208,9 +208,11 @@ function App() {
             </div>
             <div className="client">
               <p>{clientDescription}</p>
-              {siteContent.hero.clients.logos.map((client) => (
-                <img key={client.text} src={client.img} alt={client.text} />
-              ))}
+              <div className="client-logos">
+                {siteContent.hero.clients.logos.map((client) => (
+                  <img key={client.text} src={client.img} alt={client.text} />
+                ))}
+              </div>
             </div>
           </div>
           <div className="content-right" data-aos="fade-left">
