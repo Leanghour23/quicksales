@@ -40,7 +40,7 @@ function App() {
 
   const navTitle = siteContent.nav.logo.title.text;
   const languageButtonLabel = language === 'en' ? 'English' : 'Khmer';
-  const languageButtonImage = language === 'en' ? ukFlag : cambodiaFlag;
+  const languageButtonImage = language === 'en' ? cambodiaFlag : ukFlag;
   const heroTitle = getText(siteContent.hero.title);
     const heroSubtitle = getText(siteContent.hero.subtitle);
     const heroDescription = getText(siteContent.hero.description);
@@ -424,20 +424,20 @@ function App() {
 
         <div className="Testimonuals">
           <div className="testimonials-header">
-            <span className="testimonials-eyebrow">{siteContent.Testimonuals.eyebrow}</span>
-            <h2>{siteContent.Testimonuals.heading}</h2>
-            <p>{siteContent.Testimonuals.subheading}</p>
+            <span className="testimonials-eyebrow">{getText(siteContent.Testimonuals.eyebrow)}</span>
+            <h2>{getText(siteContent.Testimonuals.heading)}</h2>
+            <p>{getText(siteContent.Testimonuals.subheading)}</p>
           </div>
 
           <div className="testimonials-grid">
             {siteContent.Testimonuals.items.map((t, i) => (
               <div className="testimonial-card" key={i}>
-                <p className="testimonial-text">"{t.text}"</p>
+                <p className="testimonial-text">"{getText(t.text)}"</p>
                 <div className="testimonial-author">
-                  <img src={t.img} alt={t.name} className="testimonial-avatar" />
+                  <img src={t.img} alt={getText(t.name)} className="testimonial-avatar" />
                   <div>
-                    <p className="testimonial-name">{t.name}</p>
-                    <p className="testimonial-role">{t.role}</p>
+                    <p className="testimonial-name">{getText(t.name)}</p>
+                    <p className="testimonial-role">{getText(t.role)}</p>
                   </div>
                 </div>
               </div>

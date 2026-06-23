@@ -165,8 +165,8 @@ const siteContent = {
       kh: 'ស្វែងរកជួរសេវាកម្មដែលយើងផ្តល់ដើម្បីជួយអ្នកបង្កើនសក្តានុពលនៃប្រព័ន្ធ CRM របស់យើង។',
     },
     subtitle: {
-      en: 'Comtomer Relationship Management',
-      kh: 'Comtomer Relationship Management',
+      en: 'customer Relationship Management',
+      kh: 'customer Relationship Management',
     },
     cards: [
       {
@@ -211,7 +211,7 @@ const siteContent = {
       {
         title: {
           en: 'Inventory & Asset Optimization',
-          kh: 'Inventory & Asset Optimization',
+          kh: 'ការធ្វើទិន្នន័យសារពើភ័ណ្ឌ និងការបង្កើនប្រសិទ្ធភាពទ្រព្យសកម្ម',
         },
         description: {
           en: 'I transform inventory from a cost center into a strategic asset. Through meticulous tracking, predictive analysis, and streamlined workflows, I ensure operational precision. My focus is on reducing waste, increasing turnover, and delivering clear visibility across the entire supply chain.',
@@ -222,7 +222,7 @@ const siteContent = {
       {
         title: {
           en: 'Invoice & Billing Management',
-          kh: 'Invoice & Billing Management',
+          kh: 'ការគ្រប់គ្រងវិក្កយបត្រ និងការទូទាត់ប្រាក់',
         },
         description: {
           en: 'Efficient billing is the backbone of healthy cash flow. My approach focuses on creating streamlined invoicing systems that eliminate payment delays and reduce administrative errors. I design solutions that automate invoice generation, track payment statuses in real-time, and simplify reconciliation processes.',
@@ -233,7 +233,7 @@ const siteContent = {
       {
         title: {
           en: 'Expense Management',
-          kh: 'Expense Management',
+          kh: 'ការគ្រប់គ្រងការចំណាយ',
         },
         description: {
           en: 'Controlling costs is just as critical as driving revenue. My approach to expense management focuses on creating full visibility into where money is going—from operational costs and vendor payments to travel expenses and overhead. I design systems that automate expense tracking, enforce spending policies, and provide real-time budget monitoring. ',
@@ -250,7 +250,7 @@ const siteContent = {
     },
     subtitle: {
       en: 'We understand that every business is unique, and so are your system needs.',
-      kh: 'យើងយល់ថាអាជីវកម្មនីមួយៗមានលក្ខណៈប្លែកពីគេ ហើយតម្រូវការ CRM របស់អ្នកក៏ដូចគ្នាដែរ។',
+      kh: 'យើងយល់ថាអាជីវកម្មនីមួយៗមានលក្ខណៈប្លែកពីគេ ហើយតម្រូវការរបស់អ្នកក៏ដូចគ្នាដែរ។',
     },
     description: {
       en: 'We offer tailored solutions to help you manage customer relationships effectively and drive growth.',
@@ -506,44 +506,107 @@ const siteContent = {
     ],
   },
   Testimonuals: {
-    eyebrow: "Testimonials",
-    heading: "What Our Users Are Saying",
-    subheading: "Real Stories of Success and Satisfaction from Our Diverse Community",
+    eyebrow: {
+      en: "Testimonials",
+      kh: "សក្ខីកម្ម",
+    },
+    heading: {
+      en: "What Our Users Are Saying",
+      kh: "អ្វីដែលអ្នកប្រើប្រាស់របស់យើងកំពុងនិយាយ",
+    },
+    subheading: {
+      en: "Real Stories of Success and Satisfaction from Our Diverse Community",
+      kh: "រឿងរ៉ាវពិតអំពីភាពជោគជ័យ និងការពេញចិត្តពីសហគមន៍ចម្រុះរបស់យើង",
+    },
     items: [
       {
-        text: "This platform has completely transformed the way I manage my business finances. The real-time transaction tracking and seamless payment options have saved me so much time and effort!",
-        name: "John Davis",
-        role: "Small Business Owner",
+        text: {
+          en: "This platform has completely transformed the way I manage my business flow. The real-time transaction tracking and seamless inventories and sales options have saved me so much time and effort!",
+          kh: "វេទិកានេះបានផ្លាស់ប្តូររបៀបដែលខ្ញុំគ្រប់គ្រងហិរញ្ញវត្ថុអាជីវកម្មរបស់ខ្ញុំទាំងស្រុង។ ការតាមដានប្រតិបត្តិការតាមពេលវេលាជាក់ស្តែង និងជម្រើសបង់ប្រាក់ដ៏រលូន បានជួយសន្សំពេលវេលា និងកម្លាំងខ្ញុំបានច្រើនណាស់!",
+        },
+        name: {
+          en: "Phalla UNG",
+          kh: "Phalla UNG",
+        },
+        role: {
+          en: "PPL Garage",
+          kh: "ម្ចាស់អាជីវកម្មខ្នាតតូច",
+        },
         img: "https://randomuser.me/api/portraits/men/32.jpg",
       },
       {
-        text: "As a freelancer, managing my finances can be overwhelming. The budgeting tools and personalized insights have made it so much easier to stay on top of my expenses and plan for the future.",
-        name: "Emily Smith",
-        role: "Freelancer",
+        text: {
+          en: "Before used QUICKSALES CRM, our leads were scattered across spreadsheets and sticky notes. Now, everything is centralized. We finally have a 360-degree view of our customers, and our response time has dropped by half. I can't imagine running my business without it.",
+          kh: "ក្នុងនាមជាអ្នកធ្វើការឯករាជ្យ ការគ្រប់គ្រងហិរញ្ញវត្ថុរបស់ខ្ញុំអាចពិបាកខ្លាំង។ ឧបករណ៍គ្រប់គ្រងថវិកា និងការយល់ដឹងផ្ទាល់ខ្លួន បានធ្វើឱ្យខ្ញុំតាមដានចំណាយ និងរៀបផែនការសម្រាប់អនាគតបានងាយស្រួលជាងមុនច្រើន។",
+        },
+        name: {
+          en: "Pheakdey Loem",
+          kh: "Pheakdey Loem",
+        },
+        role: {
+          en: "CEO of SOTOITAK Trading",
+          kh: "អ្នកធ្វើការឯករាជ្យ",
+        },
         img: "https://randomuser.me/api/portraits/women/44.jpg",
       },
       {
-        text: "The investment options and portfolio management tools on this platform are top-notch. It's a game-changer for anyone serious about growing their wealth.",
-        name: "Michael Rodriguez",
-        role: "Investor",
+        text: {
+          en: "The investment options and portfolio management tools on this platform are top-notch. It's a game-changer for anyone serious about growing their wealth.",
+          kh: "ជម្រើសវិនិយោគ និងឧបករណ៍គ្រប់គ្រងផលប័ត្រនៅលើវេទិកានេះមានគុណភាពខ្ពស់ណាស់។ វាជាអ្វីដែលផ្លាស់ប្តូរហ្គេមសម្រាប់អ្នកណាក៏ដោយដែលយកចិត្តទុកដាក់ក្នុងការបង្កើនទ្រព្យសម្បត្តិរបស់ខ្លួន។",
+        },
+        name: {
+          en: "Michael Rodriguez",
+          kh: "Michael Rodriguez",
+        },
+        role: {
+          en: "Investor",
+          kh: "វិនិយោគិន",
+        },
         img: "https://randomuser.me/api/portraits/men/56.jpg",
       },
       {
-        text: "The security features are outstanding. Knowing that my financial data is protected gives me peace of mind, and the platform's efficiency makes it a pleasure to use.",
-        name: "James Kim",
-        role: "IT Consultant",
+        text: {
+          en: "The security features are outstanding. Knowing that my financial data is protected gives me peace of mind, and the platform's efficiency makes it a pleasure to use.",
+          kh: "មុខងារសុវត្ថិភាពគឺល្អឥតខ្ចោះ។ ការដឹងថាទិន្នន័យហិរញ្ញវត្ថុរបស់ខ្ញុំត្រូវបានការពារ ធ្វើឱ្យខ្ញុំមានសុខដុមរមនា ហើយប្រសិទ្ធភាពនៃវេទិកានេះធ្វើឱ្យការប្រើប្រាស់វាក្លាយជារឿងរីករាយ។",
+        },
+        name: {
+          en: "James Kim",
+          kh: "James Kim",
+        },
+        role: {
+          en: "IT Consultant",
+          kh: "ទីប្រឹក្សា IT",
+        },
         img: "https://randomuser.me/api/portraits/men/22.jpg",
       },
       {
-        text: "I never thought managing money could be this simple! The user-friendly interface and secure transaction process give me the confidence to handle my finances independently.",
-        name: "Sarah Lee",
-        role: "College Student",
+        text: {
+          en: "I never thought managing money could be this simple! The user-friendly interface and secure transaction process give me the confidence to handle my finances independently.",
+          kh: "ខ្ញុំមិនធ្លាប់គិតថាការគ្រប់គ្រងលុយអាចងាយស្រួលបែបនេះទេ! ចំណុចប្រទាក់ងាយស្រួលប្រើ និងដំណើរការប្រតិបត្តិការដែលមានសុវត្ថិភាព ផ្តល់ឱ្យខ្ញុំនូវទំនុកចិត្តក្នុងការគ្រប់គ្រងហិរញ្ញវត្ថុដោយខ្លួនឯង។",
+        },
+        name: {
+          en: "Sarah Lee",
+          kh: "Sarah Lee",
+        },
+        role: {
+          en: "College Student",
+          kh: "និស្សិតមហាវិទ្យាល័យ",
+        },
         img: "https://randomuser.me/api/portraits/women/68.jpg",
       },
       {
-        text: "The platform's intuitive design and robust features have been a game-changer for my startup. It's helped me streamline operations and focus on growing my business.",
-        name: "Laura Brown",
-        role: "Entrepreneur",
+        text: {
+          en: "The platform's intuitive design and robust features have been a game-changer for my startup. It's helped me streamline operations and focus on growing my business.",
+          kh: "ការរចនាដ៏ងាយយល់ និងមុខងាររឹងមាំរបស់វេទិកានេះ បានជួយផ្លាស់ប្តូរអាជីវកម្មថ្មីរបស់ខ្ញុំយ៉ាងខ្លាំង។ វាបានជួយឱ្យខ្ញុំសម្រួលប្រតិបត្តិការ និងផ្តោតលើការរីកចម្រើនអាជីវកម្ម។",
+        },
+        name: {
+          en: "Laura Brown",
+          kh: "Laura Brown",
+        },
+        role: {
+          en: "Entrepreneur",
+          kh: "សហគ្រិន",
+        },
         img: "https://randomuser.me/api/portraits/women/90.jpg",
       },
     ],
