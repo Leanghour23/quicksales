@@ -66,6 +66,7 @@ function App() {
   const footerDescription = getText(siteContent.footer.description);
   const footerSpan = getText(siteContent.footer.span);
   const footerContactTitle = getText(siteContent.footer.contactTitle);
+  const heroLearnMoreUrl = 'https://www.youtube.com/watch?v=9aeAgZumtyc&t=1s';
   const openExternalLink = (url) => {
     window.open(url, '_blank', 'noopener,noreferrer');
   };
@@ -221,7 +222,11 @@ function App() {
               <p>{heroDescription}</p>
               <div className="hero-actions">
                 <button className="cta-button">{heroCta}</button>
-                <button className="cta-button2">
+                <button
+                  type="button"
+                  className="cta-button2"
+                  onClick={() => openExternalLink(heroLearnMoreUrl)}
+                >
                   <span>{heroCta2}</span>
                   <img src={heroCta2Icon} alt="" aria-hidden="true" />
                 </button>
