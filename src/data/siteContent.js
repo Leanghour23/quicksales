@@ -5,9 +5,9 @@ import checklists from '../assets/checklists.png';
 import invoice from '../assets/invoice.png';
 import cash from '../assets/cash-flow.png';
 import meeting from '../assets/bussiness-meeting.jpg';
-import client1 from '../assets/client-logos/ppl.jpg';
-import client2 from '../assets/client-logos/suc.jpg';
-import client3 from '../assets/client-logos/pat.jpg';
+import client1 from '../assets/client-logos/ppl.png';
+import client2 from '../assets/client-logos/suc.png';
+import client3 from '../assets/client-logos/pat.png';
 import client4 from '../assets/client-logos/stt.png';
 import contactImage from '../assets/contact-book.png';
 import supportImage from '../assets/customer-support.png';
@@ -21,7 +21,7 @@ const siteContent = {
         img: logo,
         text: 'Logo',
       title: {
-        text: 'Quicksales',
+        text: 'QuickSales',
       },
     },
     telegramLink: 'https://t.me/ouchamroeun',
@@ -550,16 +550,16 @@ const siteContent = {
   },
   footer: {
     title: {
-      en: 'Quick Sales',
-      kh: 'Quick Sales',
+      en: 'QuickSales',
+      kh: 'QuickSales',
     },
     description: {
       en: 'Quick Sales is a trusted IT solution with a platform CRM to empower and make informed systems for business.',
       kh: 'ការលក់រហ័សគឺជាដំណោះស្រាយ IT ដែលអាចទុកចិត្តបានជាមួយនឹងវេទិកា CRM ដើម្បីផ្តល់សិទ្ធិអំណាច និងបង្កើតប្រព័ន្ធព័ត៌មានសម្រាប់អាជីវកម្ម។',
     },
     span: {
-      en: '© 2025 Quicksales.asia, inc. All rights reserved.',
-      kh: '© 2025 Quicksales.asia, inc. All rights reserved.',
+      en: '© 2026 Quicksales.asia, inc. All rights reserved.',
+      kh: '© 2026 Quicksales.asia, inc. All rights reserved.',
     },
     menuGroups: [
       {
