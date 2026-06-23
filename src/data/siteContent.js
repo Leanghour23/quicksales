@@ -83,15 +83,15 @@ const siteContent = {
   hero: {
     title: {
       en: 'Easy use,',
-      kh: 'Easy use,',
+      kh: 'ងាយស្រួលប្រើ,',
     },
     subtitle: {
       en: 'Easy sales',
-      kh: 'Easy sales',
+      kh: 'ងាយស្រួលលក់',
     },
     description: {
       en: "Quicksales enables faster issue resolution, increases customer retention, and drives greater customer happiness.",
-      kh: 'ការគាំទ្រដ៏ល្អឥតខ្ចោះ៖ ក្រុមគាំទ្រដែលយើងខិតខំរបស់យើងនៅទីនេះដើម្បីជួយអ្នកគ្រប់ជំហាន។ ចាប់ពីការចាប់ផ្តើមប្រើប្រាស់រហូតដល់ការដោះស្រាយបញ្ហា យើងប្តេជ្ញាធានាថាបទពិសោធន៍ CRM របស់អ្នករលូន និងមានប្រសិទ្ធភាព។',
+      kh: 'Quicksales ជួយដោះស្រាយបញ្ហាបានលឿនជាងមុន បង្កើនការរក្សាអតិថិជនឱ្យនៅតែប្រើប្រាស់សេវាកម្ម និងបង្កើនការពេញចិត្តរបស់អតិថិជនកាន់តែខ្ពស់។',
     },
     cta: {
       en: 'Get Started Now',
@@ -99,7 +99,7 @@ const siteContent = {
     },
     cta2: {
       en: 'Learn more',
-      kh: 'Learn more',
+      kh: 'ព័ត៌មានបន្ថែម',
         icon: topRight,
     },
     clients: {
@@ -126,7 +126,7 @@ const siteContent = {
     },
     description: {
       en: 'Experience the future of business with our secure, efficient, and user-friendly digital services',
-      kh: 'យើងផ្តល់សេវាកម្មដែលអ្នកអាចពឹងផ្អែកបាន គឺគ្រាន់តែជាអត្ថបទមិនច្បាស់នៃឧស្សាហកម្មបោះពុម្ព និងវាយអក្សរ។ ជ្រើសរើស CRM ដែលផ្តល់នូវសេវាកម្មអតិថិជនគុណភាពខ្ពស់ ធនធាន និងការបង្រៀន។',
+      kh: 'បទពិសោធន៍អនាគតនៃអាជីវកម្មជាមួយសេវាកម្មឌីជីថលដែលមានសុវត្ថិភាព ប្រសិទ្ធភាព និងងាយស្រួលប្រើប្រាស់',
     },
     banner: {
       img: meeting,
@@ -140,7 +140,7 @@ const siteContent = {
         },
         detail: {
           en: 'Founded with the vision of revolutionizing the digital transformation, we are a leading digital tech company dedicated to providing innovative and business solutions.',
-          kh: 'យើងជាក្រុមតូច ដែលបានជំរុញឱ្យបង្កើត CRM ល្អបំផុតនៅអាស៊ាន',
+          kh: 'បង្កើតឡើងដោយមានចក្ខុវិស័យក្នុងការផ្លាស់ប្តូរឌីជីថលឱ្យកាន់តែទំនើប យើងជាក្រុមហ៊ុនបច្ចេកវិទ្យាឌីជីថលឈានមុខគេ ដែលប្តេជ្ញាផ្តល់ជូននូវដំណោះស្រាយ និងសេវាកម្មអាជីវកម្មប្រកបដោយនវានុវត្តន៍។',
         },
       },
       {
@@ -150,7 +150,7 @@ const siteContent = {
         },
         detail: {
           en: 'Our cutting-edge platform ensures your transactions are safe, streamlined, and easy to manage, empowering you to take control of your bu journey with confidence and convenience.',
-          kh: 'ការលក់រហ័សគឺជាប្រព័ន្ធ CRM ដ៏ល្អបំផុតនៅអាស៊ាន',
+          kh: 'វេទិកាទំនើបរបស់យើងធានាថា ប្រតិបត្តិការ និងការគ្រប់គ្រងអាជីវកម្មរបស់អ្នកមានសុវត្ថិភាព រហ័ស និងងាយស្រួលក្នុងការគ្រប់គ្រង។ យើងជួយឱ្យអ្នកមានភាពជឿជាក់ និងភាពងាយស្រួលក្នុងការដឹកនាំ និងអភិវឌ្ឍអាជីវកម្មរបស់អ្នកឆ្ពោះទៅរកភាពជោគជ័យ។',
         },
       },
     ],
@@ -225,7 +225,7 @@ const siteContent = {
           kh: 'Invoice & Billing Management',
         },
         description: {
-          en: 'Efficient billing is the backbone of healthy cash flow. My approach focuses on creating streamlined invoicing systems that eliminate payment delays and reduce administrative errors. I design solutions that automate invoice generation, track payment statuses in real-time, and simplify reconciliation processes. From multi-currency transactions to tax compliance and recurring billing models, I ensure that every financial transaction is transparent, accurate, and audit-ready—allowing businesses to get paid faster and with less friction.',
+          en: 'Efficient billing is the backbone of healthy cash flow. My approach focuses on creating streamlined invoicing systems that eliminate payment delays and reduce administrative errors. I design solutions that automate invoice generation, track payment statuses in real-time, and simplify reconciliation processes.',
           kh: 'តាមដានកាលបរិច្ឆេទដែលត្រូវបង់ ការបង់ប្រាក់មួយផ្នែក និងសមតុល្យអតិថិជនជាមួយនឹងទិដ្ឋភាពហិរញ្ញវត្ថុច្បាស់លាស់។',
         },
         icon: invoice,
@@ -236,7 +236,7 @@ const siteContent = {
           kh: 'Expense Management',
         },
         description: {
-          en: 'Controlling costs is just as critical as driving revenue. My approach to expense management focuses on creating full visibility into where money is going—from operational costs and vendor payments to travel expenses and overhead. I design systems that automate expense tracking, enforce spending policies, and provide real-time budget monitoring. By categorizing expenditures and identifying cost-saving opportunities, I help businesses reduce waste, prevent budget overruns, and make data-driven financial decisions that protect the bottom line.',
+          en: 'Controlling costs is just as critical as driving revenue. My approach to expense management focuses on creating full visibility into where money is going—from operational costs and vendor payments to travel expenses and overhead. I design systems that automate expense tracking, enforce spending policies, and provide real-time budget monitoring. ',
           kh: 'បង្កើតរបាយការណ៍ហិរញ្ញវត្ថុ និងផ្ទៀងផ្ទាត់សកម្មភាពគណនីបានលឿនជាងមុន ដោយចំនួនជំហានធ្វើដោយដៃតិចជាងមុន។',
         },
         icon: cash,
@@ -286,9 +286,9 @@ const siteContent = {
           en: 'Essentials',
           kh: 'Essentials',
         },
-        price: 15,
+        price: 6,
         description: {
-          en: 'Startups and small business just beginning to explore CRM solution.',
+          en: 'Start business with smart financial tools',
           kh: 'ការចាប់ផ្តើមអាជីវកម្ម និងអាជីវកម្មខ្នាតតូចទើបតែចាប់ផ្តើមស្វែងរកដំណោះស្រាយ CRM ។',
         },
         features: [
@@ -325,30 +325,34 @@ const siteContent = {
           en: 'Features',
           kh: 'Features',
         },
-        price: 25,
+        price: 10,
         description: {
-          en: 'Larger enterprises needing a comprehensive CRM system with extensive support and customization options.',
+          en: 'Advanced financial control for scaling businesses',
           kh: 'សហគ្រាសធំៗត្រូវការប្រព័ន្ធ CRM ដ៏ទូលំទូលាយជាមួយនឹងការគាំទ្រយ៉ាងទូលំទូលាយ និងជម្រើសប្ដូរតាមបំណង។',
         },
         features: [
           {
-            en: 'Full CRM System Access',
+            en: 'Inventory Management',
             kh: 'ការចូលប្រើប្រព័ន្ធ CRM ពេញលេញ',
           },
           {
-            en: 'Advanced Analytics and Reporting',
+            en: 'Sale Management',
             kh: 'ការវិភាគកម្រិតខ្ពស់ និងការរាយការណ៍',
           },
           {
-            en: 'Customer Segmentation',
+            en: 'Payment Tracking',
             kh: 'ការបែងចែកអតិថិជន',
           },
           {
-            en: 'Priority Support',
+            en: 'Exepense Mangement',
             kh: 'ការគាំទ្រអាទិភាព',
           },
           {
-            en: 'Dedicated Account Manager',
+            en: 'Income Statement',
+            kh: 'អ្នកគ្រប់គ្រងគណនីពិសេស',
+          },
+          {
+            en: 'Balance sheet',
             kh: 'អ្នកគ្រប់គ្រងគណនីពិសេស',
           },
         ],
@@ -358,12 +362,12 @@ const siteContent = {
         group: 'acc',
         anchor: 'pricing-cdm',
         title: {
-          en: 'CDM',
-          kh: 'CDM',
+          en: 'Essentials',
+          kh: 'Essentials',
         },
-        price: 35,
+        price: 15,
         description: {
-          en: 'Keep your contact, lead, and deal information organized in one simple workspace.',
+          en: 'Start business with smart financial tools',
           kh: 'រក្សាព័ត៌មានទំនាក់ទំនង ព័ត៌មានអតិថិជនសក្តានុពល និងកិច្ចព្រមព្រៀងឱ្យមានរបៀបរៀបរយនៅក្នុងកន្លែងធ្វើការតែមួយ។',
         },
         features: [
@@ -394,37 +398,41 @@ const siteContent = {
         group: 'acc',
         anchor: 'pricing-acc',
         title: {
-          en: 'ACC',
-          kh: 'ACC',
+          en: 'Premium',
+          kh: 'Premium',
         },
         featureHeading: {
           en: 'Features',
           kh: 'Features',
         },
-        price: 40,
+        price: 30,
         description: {
-          en: 'Handle invoices, payment tracking, and account records with less manual work.',
+          en: 'Advanced financial control for scaling businesses',
           kh: 'គ្រប់គ្រងវិក្កយបត្រ ការតាមដានការទូទាត់ និងកំណត់ត្រាគណនីដោយមានការងារដោយដៃតិចជាងមុន។',
         },
         features: [
           {
-            en: 'Invoice Management',
+            en: 'Inventory Management',
             kh: 'ការគ្រប់គ្រងវិក្កយបត្រ',
           },
           {
-            en: 'Payment Tracking',
+            en: 'Sale Management',
             kh: 'ការតាមដានការទូទាត់',
           },
           {
-            en: 'Balance Overview',
+            en: 'Payment Tracking',
             kh: 'ទិដ្ឋភាពសមតុល្យ',
           },
           {
-            en: 'Billing History',
+            en: 'Exepense Mangement',
             kh: 'ប្រវត្តិវិក័យប័ត្រ',
           },
           {
-            en: 'Account Reports',
+            en: 'Account Income Statement',
+            kh: 'របាយការណ៍គណនី',
+          },
+          {
+            en: 'Balance sheet',
             kh: 'របាយការណ៍គណនី',
           },
         ],
