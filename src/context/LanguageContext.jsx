@@ -20,18 +20,18 @@ export function LanguageProvider({ children }) {
     const savedLanguage = localStorage.getItem('qs-language');
 
     if (savedLanguage === 'kh') {
-      document.body.classList.add('font-battambang');
+      document.body.classList.add('font-kantumruy');
     } else {
-      document.body.classList.remove('font-battambang');
+      document.body.classList.remove('font-kantumruy');
     }
   }, []);
 
   const changeLanguage = (lang) => {
     if (lang === 'kh') {
-      document.body.classList.add('font-battambang');
+      document.body.classList.add('font-kantumruy');
       setLanguage('kh');
     } else {
-      document.body.classList.remove('font-battambang');
+      document.body.classList.remove('font-kantumruy');
       setLanguage('en');
     }
   };

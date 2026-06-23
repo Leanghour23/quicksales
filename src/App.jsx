@@ -465,7 +465,12 @@ function App() {
             <div id="Contact">
               <h3>{footerContactTitle}</h3>
               {siteContent.footer.contacts.map((contact) => (
-                <a href={contact.href} key={contact.text}>
+                <a
+                  href={contact.href}
+                  key={contact.text}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img src={contact.img} alt={contact.text} />
                   {contact.text}
                 </a>

@@ -249,7 +249,7 @@ const siteContent = {
       kh: 'តម្លៃ',
     },
     subtitle: {
-      en: 'We understand that every business is unique, and so are your CRM needs.',
+      en: 'We understand that every business is unique, and so are your system needs.',
       kh: 'យើងយល់ថាអាជីវកម្មនីមួយៗមានលក្ខណៈប្លែកពីគេ ហើយតម្រូវការ CRM របស់អ្នកក៏ដូចគ្នាដែរ។',
     },
     description: {
@@ -258,8 +258,8 @@ const siteContent = {
     },
     actions: [
       {
-        en: 'Comtomer Relationship Management',
-        kh: 'Comtomer Relationship Management',
+        en: 'Customer Relationship Management',
+        kh: 'Customer Relationship Management',
         href: '#Pricing-content',
         target: 'crm',
       },

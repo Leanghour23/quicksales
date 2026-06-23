@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@400;500;600;700&display=swap');
+
 body{
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
-body.font-battambang{
-  font-family: 'Noto Sans Khmer', 'Battambang', system-ui, sans-serif;
+body.font-kantumruy,
+body.font-kantumruy *{
+  font-family: 'Kantumruy Pro', system-ui, sans-serif !important;
   font-weight: 400;
   letter-spacing: 0;
   line-height: 1.7;
