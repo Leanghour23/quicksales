@@ -335,7 +335,10 @@ function App() {
                         <h2>{getText(plan.title)}</h2>
                         <p className="pricing-copy">{getText(plan.description)}</p>
                         <div className="pricing-price">
-                          <span className="pricing-amount">{plan.price}$</span>
+                          <span className="pricing-amount">
+                            <span>{plan.price}</span>
+                            <span className="pricing-currency">$</span>
+                          </span>
                           <span className="pricing-period">/ month</span>
                         </div>
                         <button type="button" className="pricing-button">
@@ -356,7 +359,10 @@ function App() {
                       <h2>{getText(plan.title)}</h2>
                       <p className="pricing-copy">{getText(plan.description)}</p>
                       <div className="pricing-price">
-                        <span className="pricing-amount">{plan.price}$</span>
+                        <span className="pricing-amount">
+                          <span>{plan.price}</span>
+                          <span className="pricing-currency">$</span>
+                        </span>
                         <span className="pricing-period">/ month</span>
                       </div>
                       <button type="button" className="pricing-button">

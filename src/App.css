@@ -1003,18 +1003,25 @@ select {
 .pricing-price {
   display: flex;
   align-items: baseline;
-  gap: 6px;
+  gap: 10px;
   flex-wrap: wrap;
   justify-content: flex-start;
 }
 
 .pricing-amount {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
   font-size: 46px;
   line-height: 1;
   font-weight: 800;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.07em;
   color: #1f2937;
   margin-bottom: 15px;
+}
+
+.pricing-currency {
+  line-height: 1;
 }
 
 .pricing-period {
@@ -1109,6 +1116,10 @@ select {
 .pricing-card__content .pricing-amount {
   color: #d6e7c8;
   margin-bottom: 15px;
+}
+
+.pricing-card__content .pricing-currency {
+  color: #d6e7c8;
 }
 
 .pricing-card__content .pricing-period {
@@ -1612,6 +1623,57 @@ select {
   }
 }
 
+@media (min-width: 901px) and (max-width: 1200px) {
+  .Footer {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+    grid-template-areas:
+      "footer-left footer-right"
+      "footer-bottom footer-right";
+    align-items: start;
+    column-gap: 36px;
+    row-gap: 24px;
+    padding: 48px 36px 36px;
+  }
+
+  .footer-left {
+    grid-area: footer-left;
+    padding-left: 32px;
+    max-width: none;
+  }
+
+  .footer-left .Qs p {
+    padding: 0;
+    max-width: 420px;
+    margin-bottom: 0;
+  }
+
+  .footer-right {
+    grid-area: footer-right;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(120px, max-content));
+    gap: 24px 32px;
+    justify-content: end;
+    align-items: start;
+    max-width: none;
+    padding: 0 24px 0 0;
+  }
+
+  .footer-bottom {
+    grid-area: footer-bottom;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 32px;
+  }
+
+  .footer-bottom span {
+    width: auto;
+    padding: 0;
+    margin: 0;
+  }
+}
+
 @media (max-width: 576px) {
   .main-page {
     padding: 20px 14px;
@@ -1792,10 +1854,7 @@ select {
   .main-page {
     padding: 10px clamp(16px, 10vw, 200px);
   }
-}
-
-@media (min-width: 1201px) and (max-width: 1440px) {
-  .Footer {
+   .Footer {
     display: grid;
     grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
     grid-template-areas:
@@ -1804,7 +1863,7 @@ select {
     align-items: start;
     column-gap: clamp(56px, 8vw, 120px);
     row-gap: 36px;
-    padding: clamp(56px, 6vw, 80px) clamp(16px, 6vw, 100px) clamp(40px, 5vw, 64px);
+    padding: 10px clamp(16px, 10vw, 0px);
   }
 
   .footer-left {
@@ -1828,6 +1887,7 @@ select {
     align-items: start;
     max-width: none;
     padding: 0 clamp(20px, 2vw, 60px) 0 0;
+    padding-right: 100px;
   }
 
   .footer-bottom {
