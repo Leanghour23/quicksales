@@ -1395,10 +1395,8 @@ select {
 }
 
 .testimonials-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(280px, 1fr));
-  align-items: start;
-  gap: 20px;
+  column-count: 3;
+  column-gap: 20px;
   width: 100%;
   margin: 0 auto;
   text-align: left;
@@ -1412,7 +1410,8 @@ select {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 18px;
+  break-inside: avoid;
+  margin-bottom: 20px;
   transition: box-shadow 0.25s ease, transform 0.25s ease;
   height: auto;
 }
@@ -1433,7 +1432,7 @@ select {
 .testimonial-author {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap:12px;
   height: auto;
 }
 
@@ -1464,8 +1463,7 @@ select {
   }
 
   .testimonials-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 18px;
+    column-gap: 18px;
   }
 
   .testimonial-card {
@@ -1479,7 +1477,7 @@ select {
   }
 
   .testimonials-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-count: 2;
   }
 
   .Testimonuals h2 {
@@ -1495,12 +1493,12 @@ select {
   }
 
   .testimonials-grid {
-    grid-template-columns: 1fr;
-    gap: 16px;
+    column-count: 1;
   }
 
   .testimonial-card {
     padding: 16px;
+    margin-bottom: 14px;
   }
 
   .Testimonuals h2 {
