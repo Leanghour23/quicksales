@@ -421,8 +421,8 @@ function App() {
             })}
           </div>
         </div>
-
-        <div className="Testimonuals">
+      </div>
+      <div className="Testimonuals">
           <div className="testimonials-header">
             <span className="testimonials-eyebrow">{getText(siteContent.Testimonuals.eyebrow)}</span>
             <h2>{getText(siteContent.Testimonuals.heading)}</h2>
@@ -444,7 +444,6 @@ function App() {
             ))}
           </div>
         </div>
-      </div>
 
       <div className="Footer" data-aos="fade-up">
           <div className="footer-left">
