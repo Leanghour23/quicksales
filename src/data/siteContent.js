@@ -15,6 +15,12 @@ import supportImage from '../assets/customer-support.png';
 import facebook from '../assets/facebook.png';
 import telegram from '../assets/telegram.png';
 import topRight from '../assets/top-right.png';
+import Pheakdey from '../assets/Pheakdey.jpg';
+import Phalla from '../assets/Phalla.jpg';
+import Ren from '../assets/Ren.jpg';
+import Sokun from '../assets/Sokun.jpg';
+import Leab from '../assets/Leab.jpg';
+
 
 const siteContent = {
   nav: {
@@ -533,7 +539,7 @@ const siteContent = {
           en: "PPL Garage",
           kh: "PPL Garage",
         },
-        img: "https://randomuser.me/api/portraits/men/32.jpg",
+        img: Phalla,
       },
       {
         text: {
@@ -548,7 +554,7 @@ const siteContent = {
           en: "CEO, Pisnuk Auto Tech",
           kh: "CEO, Pisnuk Auto Tech",
         },
-        img: "https://randomuser.me/api/portraits/men/56.jpg",
+        img: Sokun,
       },
       {
         text: {
@@ -563,7 +569,7 @@ const siteContent = {
           en: "CEO of SOTOITAK Trading",
           kh: "CEO of SOTOITAK Trading",
         },
-        img: "https://randomuser.me/api/portraits/women/44.jpg",
+        img: Pheakdey,
       },
       {
         text: {
@@ -578,7 +584,7 @@ const siteContent = {
           en: "Accountant, Cambodia Visa Service",
           kh: "Accountant, Cambodia Visa Service",
         },
-        img: "https://randomuser.me/api/portraits/men/22.jpg",
+        img: Leab,
       },
       {
         text: {
@@ -593,7 +599,7 @@ const siteContent = {
           en: "CEO, Ren Auto Service",
           kh: "CEO, Ren Auto Service",
         },
-        img: "https://randomuser.me/api/portraits/women/68.jpg",
+        img: Ren,
       },
     ],
   },
